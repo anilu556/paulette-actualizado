@@ -1,0 +1,142 @@
+{
+  "store.custom#search-indiv": {
+    "blocks": [
+      "search-result-layout.customQuery#individuales"
+    ]
+  },
+
+  "search-result-layout.customQuery#individuales": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": false,
+        "maxItemsPerPage": 12,
+        "queryField": "137",
+        "mapField": "productClusterIds"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#indiv",
+      "search-result-layout.mobile#indiv",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.desktop#indiv": {
+    "children": [
+      "flex-layout.row#bannersearch",
+      "rich-text#searchtitle-indiv",
+      "flex-layout.row#imgseparador",
+      "flex-layout.row#txtdescr",
+      "flex-layout.row#result-indiv",
+      "flex-layout.row#newsletter"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "preventRouteChange": true
+    }
+  },
+  "rich-text#searchtitle-indiv":{
+    "props":{
+      "text": "Pasteles individuales",
+      "blockClass": "titulo-individuales"
+    }
+  },
+  "flex-layout.row#result-indiv": {
+    "children": [
+      // "flex-layout.col#filter",
+      "flex-layout.col#content-indiv"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#content-indiv": {
+    "children": [
+      //"flex-layout.row#searchinfo",
+      "flex-layout.row#fetchprevious",
+      "flex-layout.row#products-indiv",
+      "flex-layout.row#fetchmore"
+    ],
+    "props": {
+      "width": "grow",
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.row#products-indiv": {
+    "children": ["search-content#indiv"]
+  },
+  "search-content#indiv": {
+    "blocks": ["gallery#indiv", "not-found"]
+  },
+  "gallery#indiv": {
+    "props": {
+      "layouts": [
+        {
+          "name": "grid",
+          "component": "GridSummary",
+          "itemsPerRow": {
+            //17/05
+            "(min-width:1300px)": 3,
+            "desktop": 3,
+            "tablet": 2,
+            "phone": 1
+          }
+        }
+      ],
+      "GridSummary": "product-summary.shelf#indiv"
+    }
+  },
+  "search-result-layout.mobile#indiv": {
+    "children": [
+      //"flex-layout.row#searchinfomobile",
+      //"flex-layout.row#productCountMobile",
+      "flex-layout.row#bannersearch",
+      "rich-text#searchtitle-indiv",
+      "flex-layout.row#imgseparador",
+      "flex-layout.row#txtdescr",
+      "flex-layout.row#fetchprevious",
+      "flex-layout.row#contentmobileindiv",
+      "flex-layout.row#fetchmore",
+      "flex-layout.row#newsletter-mobile"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      },
+      "defaultGalleryLayout": "grid"
+    }
+  },
+  "flex-layout.row#contentmobileindiv": {
+    "children": ["search-content#indiv"],
+    "props": {
+      "preserveLayoutOnMobile": true
+    }
+  },
+    "product-summary.shelf#indiv": {
+    "children": [
+      "stack-layout#prodsum-indiv",
+      "product-summary-name",
+      "flex-layout.row#product-summary-description",
+      "product-selling-price#summary",
+      //"product-list-price#summary",
+      "flex-layout.row#buttton-wish"
+    ]
+  },
+  "stack-layout#prodsum-indiv": {
+    "children": [
+      "product-summary-image#shelf-indiv",
+      "vtex.product-highlights@2.x:product-highlights#collection"
+    ]
+  },
+  "product-summary-image#shelf-indiv": {
+    "props": {
+      "showBadge": false,
+      "aspectRatio": "1:1",
+      "maxHeight": 300,
+      "mainImageLabel": "individual"
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "store.custom#terminos-condiciones": {
+    "blocks": [
+      "responsive-layout.desktop#terms",
+      "responsive-layout.tablet#terms",
+      "responsive-layout.phone#terms"
+    ]
+  },
+
+  "responsive-layout.desktop#terms":{
+    "children":[
+      "flex-layout.row#terms-y-cond-banner",
+      "flex-layout.row#titulo-terminos",
+      "flex-layout.row#image-deco-titulo",
+      "flex-layout.row#terminos-condiciones"
+    ]
+  },
+  "responsive-layout.tablet#terms":{
+    "children":[
+      "flex-layout.row#terms-y-cond-banner",
+      "flex-layout.row#titulo-terminos",
+      "flex-layout.row#image-deco-titulo",
+      "flex-layout.row#terminos-condiciones"
+    ]
+  },
+  "responsive-layout.phone#terms":{
+    "children":[
+      "flex-layout.row#terms-y-cond-banner-phone",
+      "flex-layout.row#titulo-terminos",
+      "flex-layout.row#image-deco-titulo",
+      "flex-layout.row#terminos-condiciones"
+    ]
+  },
+
+  "flex-layout.row#terms-y-cond-banner": {
+    "children": [
+      "image#top-terms-y-cond"
+    ],
+    "props":{
+      "fullWidth": "true"
+    }
+  },
+
+  "image#top-terms-y-cond": {
+    "props": {
+      "src": "arquivos/P_BI_W_Terminos-y-Condiciones.png",
+      "width": "100%"
+    }
+  },
+  "flex-layout.row#terms-y-cond-banner-phone": {
+    "children": [
+      "image#top-terms-y-cond-phone"
+    ],
+    "props":{
+      "fullWidth": "true"
+    }
+  },
+
+  "image#top-terms-y-cond-phone": {
+    "props": {
+      "src": "arquivos/P_BI_M_Terminos-y-Condiciones.png",
+      "width": "100%"
+    }
+  },
+
+  "flex-layout.row#titulo-terminos": {
+    "children":[
+      "rich-text#tit-terminos"
+    ]
+  },"rich-text#tit-terminos":{
+    "props":{
+      "text":"Términos y Condiciones",
+      "blockClass": "h1-instit",
+      "marginBottom": 7
+    }
+  },
+
+  "flex-layout.row#terminos-condiciones": {
+    "children": [
+      "flex-layout.col#text-terminos-condiciones"
+    ],
+    "props":{
+      "horizontalAlign": "center",
+      "borderColor": "#748598"
+    }
+  },
+
+  "flex-layout.col#text-terminos-condiciones": {
+    "children": [
+      "rich-text#terminos-condiciones"
+    ],
+    "props": {
+      "blockclass": "",
+      "horizontalAlign": "center",
+      "width": "80%",
+      "borderColor": "red",
+      "paddingBottom": "10px"
+    }
+  },
+
+  "rich-text#terminos-condiciones": {
+    "props": {
+      "text": "**T\u00E9rminos y Condiciones de Uso**\r\n\r\nBienvenue! te compartimos que los siguientes t\u00E9rminos y condiciones son aplicables cuando navegues por nuestro sitio as\u00ED como a todos los pedidos que realices con Reposter\u00EDa Paulette S. de R.L. de C.V, en lo sucesivo, &quot;Paulette&quot;, &quot;Reposter\u00EDa Paulette&quot;o &quot;nosotros&quot;, por medio de las plataformas como el sitio web de Paulette, del sitio web m\u00F3vil, de la aplicaci\u00F3n m\u00F3vil o por tel\u00E9fono (que en conjunto se denominar\u00E1n &quot;paulette.mx&quot;).Reconoces y aceptas haber le\u00EDdo y entendido los t\u00E9rminos y condiciones (en lo sucesivo los &quot;T\u00E9rminos&quot;) que se establecen en esta secci\u00F3n antes de realizar tu pedido, de no hacerlo deber\u00E1s abstenerte de usar la plataforma ya que toda relaci\u00F3n entre Paulette y t\u00FA se regir\u00E1n por los t\u00E9rminos y condiciones que se establecen en el presente documento.\r\n\r\nAceptas ser mayor de edad, conocer el alcance de los t\u00E9rminos y condiciones, estar de acuerdo y obligado por los mismos, as\u00ED como renuncias de forma irrevocable a invocar cualquier conflicto de leyes o disposiciones que sean contrarias a los t\u00E9rminos y condiciones as\u00ED como renuncias a en un futuro oponerte a estos.\r\n\r\nDe la misma forma te pedimos que revises con frecuencia esta secci\u00F3n ya que nuestros t\u00E9rminos y condiciones de uso pueden cambiar sin previo aviso, la versi\u00F3n vigente que se encuentre publicada en paulette.mx ser\u00E1 la aplicable a tu pedido.\r\n\r\n**Productos y Servicios**\r\n\r\nEn Paulette queremos brindarte la mejor experiencia en l\u00EDnea posible. Para ello, debemos asegurarnos que nuestros productos y servicios se encuentren disponibles con el cuidado y dedicaci\u00F3n que cada producto y servicio debe tener. Por ello, aceptas y reconoces que dentro de paulette.mx ofrecemos la venta de diversos productos y servicios mismos que son elaborados artesanalmente por Reposter\u00EDa Paulette, aceptas y reconoces que en ning\u00FAn momento paulette.mx te obliga a comprar dentro del sitio. Podr\u00E1n mostrarse sugerencias o recomendaciones durante la navegaci\u00F3n de la p\u00E1gina para complementar tu experiencia como usuario, sin embargo la compra final ser\u00E1 siempre decisi\u00F3n tuya.\r\n\r\nHacemos nuestro mejor esfuerzo para mostrar con precisi\u00F3n las cualidades de nuestros productos,por ello reconoces que los productos pueden variar en cuanto a su composici\u00F3n, tama\u00F1o, color, medidas y detalle ya que son elaborados uno a uno de forma artesanal por nuestro equipo de colegas reposteros. El color que ves en el producto depende de tu dispositivo, y no podemos garantizar que\u202F el mismo muestre con precisi\u00F3n el tono de los colores.\u202F En cualquier momento y sin previo aviso, podremos retirar, incluir o modificar los productos ofrecidos en paulette.mx o incluso cancelar el servicio ofrecido en l\u00EDnea. Toma en cuenta que nuestro contenido se actualiza seg\u00FAn la disponibilidad de nuestros productos.\r\n\r\n**Precios, Costos de Env\u00EDo y Pedidos**\r\n\r\nLos precios en paulette.mx ya incluyen el Impuesto al Valor Agregado (IVA), pero no el costo de env\u00EDo. Si la tasa del IVA aplicable en la fecha en que se haga el pedido cambia despu\u00E9s de que se haya hecho el pedido, el cambio se reflejar\u00E1 en el precio de los art\u00EDculos sin que debamos notificarte.\r\n\r\nEl costo de env\u00EDo de los pedidos se incluir\u00E1 en el monto total a pagar, donde se desglozar\u00E1 el precio del producto y el costo del env\u00EDo dentro de paulette.mx. Los precios en nuestros puntos de venta y en l\u00EDnea pueden \u202Fvariar y estar\u00E1n sujetos a cambios.\r\n\r\nPodr\u00E1s hacer tu pedido a trav\u00E9s de paulette.mx Una vez que hayas hecho tu pedido en l\u00EDnea, si nos compartiste tu correo electr\u00F3nico te enviaremos la confirmaci\u00F3n de tu pedido. Si por alg\u00FAn motivo no podemos cumplir con tu pedido, te notificaremos a la brevedad posible. Si ya recibimos el pago de tu pedido, no te preocupes tendr\u00E1s la opci\u00F3n de elegir otros productos por el monto previamente pagado o si deseas, reembolsaremos el importe correspondiente con el mismo m\u00E9todo que utilizaste para hacer el pago. Solo recuerda que los reembolsos, se generar\u00E1n de acuerdo con las pol\u00EDticas de los prestadores de servicios de soluciones de pago y en caso de ser necesario, un colega Paulette se pondr\u00E1 en contacto contigo.\r\n\r\n**Entregas**\r\n\r\nEn Paulette trabajamos con un alto compromiso al aceptar y procesar tus pedidos y haremos nuestro mejor esfuerzo por entregar tu pedido dentro de nuestra zona de cobertura, de acuerdo con la opci\u00F3n de env\u00EDo que seleccionaste. Ten en cuenta que no podemos hacer entregas en direcciones que est\u00E9n fuera de nuestra cobertura de entrega.\r\n\r\nLa entrega de los productos ser\u00E1 de lunes a domingo de 10:00 am a 6:00 pm. Toma en cuenta que en cualquier momento Paulette podr\u00E1 modificar los horarios establecidos. Nos esforzamos para procesar los pedidos en el menor tiempo posible y les damos seguimiento en el orden en que llegan. Nuestro objetivo es hacer nuestras entregas en un lapso de 30 a 120 minutos despu\u00E9s de la confirmaci\u00F3n de tu pedido, a menos que se acuerde lo contrario durante tu proceso de compra.\r\n\r\nAunque nuestro objetivo es hacer nuestras entregas en el lapso que se estipula, la entrega puede tardar m\u00E1s debido a eventos inesperados. En el caso improbable de que el tiempo de entrega exceda de 1 d\u00EDa, puedes cancelar tu pedido.\u202F\r\n\r\nAntes de realizar tu pedido, se te informar\u00E1 de los detalles que se esperan durante el proceso de entrega. Una vez que hayas hecho tu pedido, si nos proporcionaste tu direcci\u00F3n de correo electr\u00F3nico, te enviaremos un correo de confirmaci\u00F3n con los detalles que te esperan durante el proceso de entrega.\u202F Si tu pedido no llega en la fecha programada, contact\u00E1nos al correo: [info@pasteleriapaulette.com](mailto:info@pasteleriapaulette.com). Si despu\u00E9s de dos intentos no pudimos entregar tu pedido Paulette se reserva el derecho de cobrar por los costos generados para nosotros.\r\n\r\n**Garant\u00EDa del Servicio**\r\n\r\nSi al momento de completar el pedido cometes alg\u00FAn error en la direcci\u00F3n de entrega, en el producto seleccionado u otra informaci\u00F3n relevante para completar la entrega Paulette no restituir\u00E1 el producto ya que dicha omisi\u00F3n fue del usuario, pero si el error en la entrega del producto fue error de nosotros, si ser\u00E1 responsabilidad nuestra restituirte el producto que solicitaste.\r\n\r\nSi el producto que adquiriste llegara da\u00F1ado a su destino final sea por responsabilidad de Paulette, tendr\u00E1s 20 (veinte) minutos a partir de haber recibido el producto, para realizar la reclamaci\u00F3n a Reposter\u00EDa Paulette a trav\u00E9s del correo electr\u00F3nico [info@pasteleriapaulette.com](mailto:info@pasteleriapaulette.com), se\u00F1alando y demostrando la situaci\u00F3n. Paulette a su libre juicio podr\u00E1 considerarlo procedente o no pudi\u00E9ndose sustituir por uno igual o similar (sujeto a disponibilidad), sin cargo adicional alguno para ti. Sin embargo si requerimos la devoluci\u00F3n del producto en reclamo.\r\n\r\nAceptas que el consumo de nuestros productos ofrecidos son responsabilidad de quien los consume inclusivecuando los productos generen reacciones al\u00E9rgicas por lo que es responsabilidad de cada usuario verificar y asegurarse que los productos no contengan ingredientes a los cuales sea o puedan ser al\u00E9rgicos por lo que no se fincar\u00E1 responsabilidad alguna a Reposter\u00EDa Paulette por el uso o consumo incorrecto del producto.Cumplir con las medidas de sanidad, inocuidad, est\u00E1ndares de calidad y cumplimiento de dichas regulaciones son responsabilidad nuestra debiendo acreditar conforme a lo establecido en el apartado de limitaci\u00F3n de responsabilidad\r\n\r\n**Pagos**\r\n\r\nNo asumimos responsabilidad alguna sobre el mal uso de los datos bancarios, de pago o personales de los Usuarios, ya que dichos datos son depositados a terceros. Los pedidos realizados a trav\u00E9s de la Plataforma s\u00F3lo podr\u00E1n ser cancelados antes de su env\u00EDo, d\u00E1ndote un m\u00E1ximo de 5 (cinco) minutos a partir de la realizaci\u00F3n del pedido para cancelarlo. Los reembolsos, en su caso, se generar\u00E1n de acuerdo con las pol\u00EDticas de los prestadores de servicios de soluciones de pago. Transcurrido el plazo mencionado, no existir\u00E1 derecho a cancelaci\u00F3n o reembolso alguno.\r\n\r\n\u202F **M\u00E9todos de pago**\r\n\r\nPuedes utilizar varios m\u00E9todos de pago para tus productos, tales como Paypal, tarjetas de cr\u00E9dito o d\u00E9bito, OpenPay, transferencia electr\u00F3nica, entre otras que pueden estar disponibles. Paulette no guarda, almacena ni comparte datos referentes a cuentas o tarjetas de cr\u00E9dito o d\u00E9bito, PayPal y OpenPay.\r\n\r\nPayPal:Si pagas con PayPal, nos reservamos el derecho de comprobar la validez de la cuenta de PayPal, que haya fondos suficientes para cubrir el monto de la compra y validar los detalles de la direcci\u00F3n de facturaci\u00F3n que proporcionaste. El importe aplicable ser\u00E1 retenido inmediatamente en la cuenta de PayPal. Nos reservamos el derecho de rechazar cualquier compra.\r\n\r\nTarjeta de cr\u00E9dito o d\u00E9bito a trav\u00E9s de OpenPay:Puedes introducir la informaci\u00F3n de tu m\u00E9todo de pago al momento de hacer tu pedido con una tarjeta de cr\u00E9dito o d\u00E9bito v\u00E1lida (American Express, VISA o Mastercard). El importe aplicable ser\u00E1 retenido inmediatamente en tu tarjeta. Paulette, se reserva el derecho de comprobar la validez de la tarjeta de cr\u00E9dito o d\u00E9bito, el estado de tu cr\u00E9dito en relaci\u00F3n con el valor del pedido y si la direcci\u00F3n que proporcionaste es correcta. Podemos rechazar pedidos de acuerdo con el resultado de dichos controles.\u202F Si la entidad bancaria no autoriza el pago, no nos haremos responsables por ning\u00FAn retraso o falta de entrega y no podremos formalizar la compra contigo. Al utilizar una tarjeta de cr\u00E9dito o d\u00E9bito y aceptar el pago, est\u00E1s confirmando que la tarjeta de cr\u00E9dito es tuya.\r\n\r\nTransferencia electr\u00F3nica: al seleccionar este m\u00E9todo de pago te enviaremos los datos con la informaci\u00F3n necesaria para que puedas completar tu pago, una vez realizada la transferencia deber\u00E1s compartir tu pago al correo electr\u00F3nico: info@pasteleriapaulette.com\r\n\r\nEs y ser\u00E1 responsabilidad tuya implementar medidas de seguridad en el m\u00E9todo de pago que utilices, y en caso de desearlo, atenerte a las recomendaciones de uso emitidas por los prestadores de servicio mencionados anteriormente. As\u00ED mismo no nos hacemos responsables del mal uso que hagas de los sistemas y servicios de pago, de los ataques que recibas por hackers inform\u00E1ticos, malwares as\u00ED como de las consecuencias que deriven de este mal uso. Te corresponder\u00E1 el pago y\/o en todo caso a quien haya sido el prestador de servicios de motor de pago siendo t\u00FA el responsable de seguir los t\u00E9rminos y condiciones de los servicios que puedes revisar en la p\u00E1gina de cada uno. En caso de discrepancia en los pagos, corresponder\u00E1 a los usuarios acreditarlos.\r\n\r\nEn caso de presentar alguna inconsistencia en tu pedido podremos reservarnos el derecho de solicitar tu identificaci\u00F3n oficial del titular de la tarjeta con quien se efectu\u00F3 el pago a trav\u00E9s de un mensaje o al momento de la entrega de tu pedido.\r\n\r\nRecibir\u00E1s tu factura, expedida de acuerdo con los requisitos que se establecen legalmente, mediante un correo electr\u00F3nico de confirmaci\u00F3n de env\u00EDo.\r\n\r\nNos reservamos el derecho de cancelar y reembolsar cualquier pedido sospechoso de fraude, si no se proporciona la identificaci\u00F3n del titular de la tarjeta con que se efectu\u00F3 el pago.\r\n\r\n**Propiedad intelectual**\r\n\r\nToda la propiedad industrial, derechos de autor, el dise\u00F1o de las p\u00E1ginas, el contenido generado, incluyendo fotograf\u00EDas, textos, incluida la copia o el almacenamiento de dicho contenido, derechos derivados del software que integran la p\u00E1gina son derechos reservados y exclusivos de Reposter\u00EDa Paulette quedando expresamente prohibida su uso total o parcial, divulgaci\u00F3n, modificaci\u00F3n, transmisi\u00F3n o realizar copias de la misma, sujeto a las disposiciones y penas establecidasen los t\u00E9rminos de la leyes aplicables vigentes.\r\n\r\n**Uso de informaci\u00F3n**\r\n\r\nCon la intenci\u00F3n de brindarte una experiencia completa dentro de paulette.mx vincularemos tu navegaci\u00F3n con sitios de internet, proveedores de servicios, aplicaciones con el \u00FAnico objeto que puedas completar tu transacci\u00F3n deseada dentro de nuestro sitio,as\u00ED como en el caso de registro podr\u00E1s hacerlo a trav\u00E9s de plataformas de terceros como Google, Facebook m\u00E1s no nos hacemos cargo del contenido, operaci\u00F3n y t\u00E9rminos y condiciones de dichos sitios o proveedores de servicios por lo que no nos hacemos responsables por alg\u00FAn da\u00F1o o perjuicio que surja derivado de dichos sitios.\r\n\r\nComprendes y aceptas que no debes (i) publicar, transmitir, redistribuir, cargar o promocionar cualquier comunicaci\u00F3n o contenido que pueda da\u00F1ar o afectar negativamente a Reposter\u00EDa Paulette a sus productos o servicios; (ii) actuar o emplear cualquier dispositivo que restrinja, deteriore, interfiera o impida que cualquier otro usuario utilice o disfrute paulette.mx, o que afecte la seguridad del sitio, o (iii) emplear cualquier dispositivo o tratar de utilizar cualquier motor, software, herramienta, agente, secuencia de comandos, dispositivo o mecanismo (incluidos, entre otros, ara\u00F1as, robots, rastreadores, avatares o agentes inteligentes) con el fin de navegar, buscar en el sitio o copiar contenido del sitio. Nos reservamos el derecho de prohibir inmediatamente el acceso a la plataforma y cerrar la cuenta de cualquier usuario que atente o viole esta o cualquier otra disposici\u00F3n que se incluya en estos t\u00E9rminos y condiciones.\u202F\r\n\r\n**L\u00EDmite de responsabilidad**\r\n\r\nNo es nuestra intenci\u00F3n excluir cualquier responsabilidad en que incurramos en caso de que ocurra un fallecimiento o lesiones personales causadas por alguna negligencia de nuestra parte o la de nuestros empleados y agentes. Si incumplimos estos T\u00E9rminos, seremos responsables solamente de las p\u00E9rdidas que sean consecuencia razonablemente previsible de dicho incumplimiento.\u202F\r\n\r\nNo somos responsables de p\u00E9rdidas indirectas que sean un efecto secundario de la p\u00E9rdida o da\u00F1o principal, cuando dicha falla se deba a un evento que est\u00E9 m\u00E1s all\u00E1 de nuestro control razonable, lo cual incluye \u202Fcaso fortuito y eventos de fuerza mayor, dentro de los que se incluye pero no se limita a incendios, inundaciones, tormentas, revueltas, disturbios civiles , guerras, accidentes nucleares y actividades terroristas.\r\n\r\nNuestra m\u00E1xima responsabilidad hacia ti por cualquier p\u00E9rdida o da\u00F1o que surja en relaci\u00F3n con tu pedido se limitar\u00E1 al costo total de tu pedido.\r\n\r\nTe obligas a mantener y sacar en paz y a salvo,as\u00ED como mantener fuera de cualquier conflicto a Reposter\u00EDa Paulette, sus accionistas, subsidiarias, afiliadas, funcionarios, directores, empleados, asesores, proveedores, prestadores, y representantes de cualquier da\u00F1o y perjuicio, incluyendo da\u00F1os indirectos, que surjan de cualquier forma con relaci\u00F3n a paulette.mx las aplicaciones, los servicios y los productos. En caso de que se determine alguna responsabilidad de Reposter\u00EDa Paulette por alg\u00FAn tribunal competente, estar\u00E1 limitada al monto pagado como contraprestaci\u00F3n por el producto que t\u00FA hayas adquirido de Paulette. T\u00FA reembolsar\u00E1s a Reposter\u00EDa Paulette cualquier gasto en que se incurra o da\u00F1o en que sufra la misma, sin limitaci\u00F3n alguna.\r\n\r\n**Aviso de Privacidad y Protecci\u00F3n de Datos**\r\n\r\nLos datos proporcionados por ti usuario al momento de navegar en nuestra plataforma ser\u00E1n tratados conforme a nuestro Aviso de Privacidad conforme a lo establecido en la Ley de Protecci\u00F3n de Datos Personales en Posesi\u00F3n de Particulares. En caso que conozcas informaci\u00F3n de Paulette considerada como confidencial, te obligas a mantenerla como confidencial, y a no revelarla, ni a usarla en tu beneficio bajo ning\u00FAn motivo. En caso de revelaci\u00F3n, almacenamiento, uso o aprovechamiento de dichos datos personales o informaci\u00F3n, te obligas a indemnizar al titular de dichos datos o informaci\u00F3n, y a, con los da\u00F1os y perjuicios que se causen, o $1,000,000.00 (un mill\u00F3n de pesos mexicanos 00\/100 M.N.) a elecci\u00F3n de y\/o de la parte afectada.\r\n\r\n**Ley Aplicable y jurisdicci\u00F3n**\r\n\r\nPara la interpretaci\u00F3n, cumplimiento y ejecuci\u00F3n de los presentes T\u00E9rminos y Condiciones, las partes expresamente se someten a la jurisdicci\u00F3n de los Juzgados de Primera Instancia competentes, del Primer Partido Judicial del Estado de Jalisco, M\u00E9xico; siendo aplicable, respecto al fondo, las presentes condiciones y, supletoriamente la legislaci\u00F3n federal mexicana en materia mercantil. El Usuario renuncia expresamente a cualquier otra jurisdicci\u00F3n o fuero competente por raz\u00F3n de su domicilio presente, futuro o cualquier otra causa.\r\n\r\n\u00DAltima fecha de modificaci\u00F3n: 28 de junio del 2021.",
+      "blockClass": "privacidad-content"
+    }
+  }
+}

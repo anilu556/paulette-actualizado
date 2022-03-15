@@ -1,0 +1,94 @@
+:global(.vtex-flex-layout-0-x-flexCol--customsummary) {
+  text-align: center;
+  min-height: 130px;
+}
+
+:global(.vtex-product-summary-2-x-description) {
+  font-family: "Caslon-Italic";
+  color: #000000;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+:global(.vtex-flex-layout-0-x-flexCol--customsummary)
+  :global(.vtex-flex-layout-0-x-flexColChild--customsummary) {
+  margin-bottom: 20px;
+}
+:global(.vtex-flex-layout-0-x-flexCol--customsummary)
+  :global(.vtex-product-summary-2-x-nameContainer) {
+  padding-bottom: 0;
+}
+:global(.vtex-product-price-1-x-sellingPriceValue--summary) {
+  font-size: 18px;
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--colwish) {
+  margin-top: -0.5px;
+}
+
+:global(.vtex-product-summary-2-x-brandName) {
+  color: #000000 !important;
+  font-family: Sofia-Pro;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0;
+}
+
+:global(.vtex-product-price-1-x-sellingPriceValue--summary) {
+  color: #000000;
+  font-size: 16px;
+}
+
+:global(.vtex-product-summary-2-x-image) {
+  max-height: 260px !important;
+}
+
+:global(.vtex-slider-layout-0-x-sliderArrows--shelf) {
+  top: 107px;
+}
+
+:global(.vtex-slider-layout-0-x-slide--shelf) {
+  margin-bottom: 5rem !important;
+}
+
+@media (min-width: 768px) {
+  :global(.vtex-slider-layout-0-x-sliderLeftArrow--shelf) {
+    left: 50px;
+  }
+
+  :global(.vtex-slider-layout-0-x-sliderRightArrow--shelf) {
+    right: 50px;
+  }
+}
+
+:global(.vtex-slider-layout-0-x-paginationDotsContainer) {
+  padding-bottom: 1rem;
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--btncomprar) {
+  margin-right: 10px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--but-container) {
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+@media (min-width: 1025px){
+  :global(.vtex-flex-layout-0-x-flexCol--colwish){
+    margin-top: 0;
+  }
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--colwish){
+  margin-top: .05px;
+}
+
+@media(min-width:750px){
+  :global(.vtex-flex-layout-0-x-flexCol--colwish){
+    margin-top: 0;
+  }
+}
+
+
+

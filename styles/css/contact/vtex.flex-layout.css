@@ -1,0 +1,127 @@
+.flexRowContent--contact {
+  max-width: 90%;
+  margin: auto;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (min-width:1024px){
+  .flexRowContent--contact {
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--contenedor-formulario-contacto)
+  :global(.vtex-input__label){
+    font-family: 'Sofia-Pro';
+    font-weight: bold;
+    font-size: 16px;
+    color: #000000;
+  }
+
+.flexRowContent--contact :global(.vtex-textarea__label){
+  text-transform: uppercase!important;
+}
+
+.flexRowContent--contact :global(.vtex-input__label),
+.flexRowContent--contact :global(.vtex-textarea__label) {
+  font-family: 'Sofia-Pro';
+  font-weight: bold;
+  font-size: 16px;
+  color: #000000;
+}
+
+
+:global(.vtex-rich-text-0-x-paragraph--link-insta){
+  font-family: 'Caslon-Italic';
+  font-size: 25px;
+  padding-left: 8px;
+  margin-top: 20px;
+}
+@media(min-width:400px){
+
+}
+
+.flexRowContent--contact :global(.vtex-input),
+.flexRowContent--contact :global(.vtex-textarea) {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+:global(.vtex-store-form-0-x-formSubmitContainer){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+:global(.vtex-textarea__input){
+  border: 2px solid #000000;
+}
+:global(.vtex-textarea__input):hover{
+  border: 2px solid #000000;
+}
+:global(.vtex-input-prefix__group){
+  border: 2px solid #000000;
+}
+:global(.vtex-input-prefix__group):hover{
+  border: 2px solid #000000;
+}
+
+:global(.vtex-rich-text-0-x-container--link-insta){
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--contenedor-redesSoc-Contacto){
+  display: flex;
+  flex-direction: row;
+}
+:global(.vtex-store-components-3-x-imageElement--icono-instagram){
+  max-width: 30px;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--contenedor-redesSoc-Contacto){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+:global(.vtex-rich-text-0-x-wrapper--info-contacto){
+  width: 100%;
+  text-align: center;
+  font-family: 'CaslonPro';
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--contenedor-redesSoc-Contacto){
+  justify-content: center;
+}
+
+:global(.vtex-rich-text-0-x-link--link-insta){
+  text-decoration: none;
+  color: #000000;
+  transition: 0.3s ease all;
+}
+
+:global(.vtex-rich-text-0-x-link--link-insta):hover{
+  color: #efb3cb;
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--contenedor-formulario-contacto){
+  margin-bottom: 3rem;
+}
+
+@media(min-width:1024px){
+  :global(.vtex-flex-layout-0-x-flexCol--contenedor-formulario-contacto){
+    margin-bottom: 0;
+  }
+}

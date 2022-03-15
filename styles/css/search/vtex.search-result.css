@@ -1,0 +1,122 @@
+.galleryLayoutOptionButton {
+  background-color: #f0f0f0;
+  color: #3f3f40;
+  padding: 0.375rem 0.75rem 0.375rem 0.75rem;
+}
+
+.galleryLayoutOptionButton--selected {
+  background-color: #3f3f40;
+  color: #ffffff;
+}
+
+.galleryLayoutSwitcher {
+  border-radius: 4px 4px 4px 4px;
+  justify-content: center;
+  overflow: hidden;
+  width: auto !important;
+  align-self: center;
+}
+
+.galleryItem--list {
+  border-bottom: 1px #e7e9ee solid;
+}
+
+:global(.vtex-search-result-3-x-galleryTitle--layout),
+:global(.vtex-rich-text-0-x-container--txtsearch) {
+  text-align: center;
+}
+
+:global(.vtex-search-result-3-x-searchResultContainer) {
+  max-width: 100%;
+  padding: 0%;
+}
+/* 17/05 starts */
+:global(.vtex-search-result-3-x-galleryTitle--layout) {
+  color: #000000;
+  font-family: Didot;
+  font-size: 40px;
+  letter-spacing: 0;
+  margin: 3rem 0 1rem 0;
+  text-transform: uppercase;
+  padding: 0 10px;
+}
+@media (min-width: 400px) {
+  :global(.vtex-search-result-3-x-galleryTitle--layout) {
+    font-size: 65px;
+  }
+}
+
+:global(.vtex-add-to-cart-button-0-x-buttonDataContainer)
+  :global(.vtex-add-to-cart-button-0-x-buttonText) {
+  font-family: Sofia-Pro;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 0;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--txtsearch) {
+  color: #000000;
+  font-family: CaslonPro;
+  font-size: 20px;
+  font-style: italic;
+  letter-spacing: 0;
+}
+
+@media (max-width: 1150px) {
+  /*newsletter section*/
+  :global(.vtex-flex-layout-0-x-flexRowContent--nl-mobile) {
+    display: block;
+  }
+  :global(.vtex-store-components-3-x-newsletter--newsletter) {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    background-color: #dde1ea;
+    color: #000000;
+    margin-bottom: 50px;
+  }
+  :global(.vtex-store-components-3-x-label--newsletter) {
+    color: #000000;
+  }
+  :global(.vtex-flex-layout-0-x-flexRow--nl-mobile)
+    :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: 100% !important;
+  }
+}
+/* 17/05 ends*/
+
+:global(.vtex-rich-text-0-x-paragraph--txtsearch) {
+  margin-top: 3rem;
+}
+
+:global(.vtex-search-result-3-x-buttonShowMore--layout) {
+  margin-bottom: 20px;
+}
+:global(.vtex-flex-layout-0-x-flexRow--row-description) {
+  padding: 0 10vw;
+}
+@media (min-width: 1024px) {
+  :global(.vtex-flex-layout-0-x-flexRow--row-description) {
+    padding: 0 250px;
+  }
+}
+:global(.vtex-search-result-3-x-gallery--grid) {
+  padding-left: 0;
+}
+:global(.vtex-rich-text-0-x-paragraph--titulo-individuales) {
+  color: #000000;
+  font-family: "Didot";
+  font-size: 40px;
+  letter-spacing: 0;
+  margin: 3rem 0 1rem 0;
+  text-transform: uppercase;
+  padding: 0 10px;
+}
+@media (min-width: 400px) {
+  :global(.vtex-rich-text-0-x-paragraph--titulo-individuales) {
+    font-size: 65px;
+  }
+}
+:global(.vtex-rich-text-0-x-container--titulo-individuales) {
+  justify-content: center;
+}

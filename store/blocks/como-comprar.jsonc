@@ -1,0 +1,109 @@
+{
+  "store.custom#como-comprar": {
+    "children": [
+      "responsive-layout.desktop#como-comprar",
+      "responsive-layout.tablet#como-comprar",
+      "responsive-layout.phone#como-comprar"
+    ]
+  },
+
+  "responsive-layout.desktop#como-comprar":{
+    "children":[
+      "flex-layout.row#como-comprar-banner",
+      "rich-text#como-comprar",
+      "flex-layout.row#image-deco-titulo",
+      "flex-layout.row#titrosa-faq",
+      "flex-layout.row#icons-faq-container",
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#como-comprar",
+      "flex-layout.row#titinstagram-tablet",
+      "slider-layout#text-test",
+      "flex-layout.row#newsletter",
+      "back-to-top-button"
+    ]
+  },
+  "responsive-layout.tablet#como-comprar":{
+    "children":[
+      "flex-layout.row#como-comprar-banner",
+      "rich-text#como-comprar",
+      "flex-layout.row#image-deco-titulo",
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#titrosa-faq",
+      "flex-layout.row#icons-faq-container",
+      "flex-layout.row#como-comprar",
+      "flex-layout.row#titinstagram-tablet",
+      "slider-layout#text-test",
+      "flex-layout.row#newsletter"
+    ]
+  },
+  "responsive-layout.phone#como-comprar":{
+    "children":[
+      "flex-layout.row#como-comprar-banner-phone",
+      "rich-text#como-comprar",
+      "flex-layout.row#image-deco-titulo",
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#titrosa-faq",
+      "flex-layout.row#icons-faq-container",
+      "flex-layout.row#como-comprar",
+      "flex-layout.row#titinstagram-tablet",
+      "slider-layout#text-test",
+      "flex-layout.row#newsletter-mobile"
+    ]
+  },
+
+  "flex-layout.row#como-comprar-banner": {
+    "children": [
+      "image#top-como-comprar"
+    ],
+    "props":{
+      "fullWidth": "true"
+    }
+  },
+  "image#top-como-comprar": {
+    "props": {
+      "src": "arquivos/P_BI_W_Preguntas-Frecuentes.png",
+      "width": "100%"
+    }
+  },
+  "flex-layout.row#como-comprar-banner-phone": {
+    "children": [
+      "image#top-como-comprar-phone"
+    ],
+    "props":{
+      "fullWidth": "true"
+    }
+  },
+  "image#top-como-comprar-phone": {
+    "props": {
+      "src": "arquivos/P_BI_M_Preguntas-Frecuentes.png",
+      "width": "100%"
+    }
+  },
+  "rich-text#como-comprar": {
+    "props": {
+      "text": "Como Comprar",
+      "blockClass": "h1-instit"
+    }
+  },
+  "flex-layout.row#como-comprar": {
+    "children":[
+      "rich-text#como-comprar-callToAction",
+      "rich-text#btn-callToAction"
+    ],
+    "props":{
+      "blockClass":"info-chat"
+    }
+  },
+  "rich-text#como-comprar-callToAction":{
+    "props":{
+      "text":"Si tienes alguna duda ponemos a tu disposición nuestro chat de WhatsApp al cual puedes acceder mediante el siguiente enlace:",
+      "blockClass": "txt-chat"
+    }
+  },
+  "rich-text#btn-callToAction":{
+    "props":{
+      "text":"[Iniciar chat con Paulette](https://api.whatsapp.com/send?phone=+52%201%203316232715&text=Hola!)",
+      "blockClass": "btn-chat"
+    }
+  }
+}

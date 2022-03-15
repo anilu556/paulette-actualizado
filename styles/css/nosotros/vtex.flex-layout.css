@@ -1,0 +1,230 @@
+/*########################### Estilos pagina Nosotros #############################*/
+
+:global(.vtex-rich-text-0-x-paragraph--h1-instit) {
+  margin-top: 15px;
+  margin-bottom: 0;
+  font-size: 37px;
+  font-family: "Didot";
+  color: #000000;
+  text-align: center;
+}
+
+@media (min-width: 750px) {
+  :global(.vtex-rich-text-0-x-paragraph--h1-instit) {
+    margin-top: 15px;
+    margin-bottom: 1rem;
+    font-size: 65px;
+  }
+}
+
+:global(.vtex-rich-text-0-x-container--h1-instit) {
+  display: flex;
+  justify-content: center;
+}
+
+:global(.vtex-rich-text-0-x-container--desc-nosotros) {
+  justify-content: center;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--desc-nosotros) {
+  font-family: "Caslon-Italic";
+  font-size: 20px;
+  padding: 1rem 0;
+  color: #000000;
+  text-align: center;
+  margin: 2rem 1rem;
+}
+
+@media (min-width: 800px) {
+  :global(.vtex-rich-text-0-x-container--desc-nosotros) {
+    padding: 0 10rem;
+  }
+}
+
+:global(.vtex-rich-text-0-x-paragraph--h2-instit) {
+  margin: 15px;
+  margin-bottom: 15px;
+  font-size: 30px;
+  font-family: "Didot";
+  color: #000000;
+  text-align: center;
+}
+
+@media (min-width: 750px) {
+  :global(.vtex-rich-text-0-x-paragraph--h2-instit) {
+    font-size: 45px;
+  }
+}
+
+:global(.vtex-rich-text-0-x-container--h2-instit) {
+  display: flex;
+  justify-content: center;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--h2-autor) {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "CaslonPro";
+  font-size: 20px;
+  color: #000000;
+}
+
+:global(.vtex-rich-text-0-x-container--h2-autor) {
+  display: flex;
+  justify-content: center;
+}
+
+/* Info cards nosotros*/
+
+:global(.vtex-flex-layout-0-x-flexRow--img-info-cont-tab){
+  position: absolute;
+  width: 30rem!important;
+  left: 3rem;
+}
+:global(.vtex-flex-layout-0-x-flexCol--img-info-cont-tab){
+  position: absolute;
+  width: 30rem!important;
+  left: 3rem;
+}
+:global(.vtex-flex-layout-0-x-flexRow--img-info-cont-tad-der){
+  position: absolute;
+  width: 30rem!important;
+  right: 3rem;
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--img-info-cont) {
+  margin: 0 auto;
+}
+
+@media (min-width: 750px) {
+  :global(.vtex-flex-layout-0-x-flexCol--img-info-cont) {
+    margin-left: 5rem;
+    margin-right: 0;
+  }
+  :global(.vtex-flex-layout-0-x-flexRowContent--img-info-cont) {
+    margin-left: 2rem;
+  }
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--inf-card-cont-der)
+  :global(.vtex-flex-layout-0-x-flexCol--img-info-cont) {
+  margin: 0 auto;
+}
+
+@media (min-width: 750px) {
+  :global(.vtex-flex-layout-0-x-flexRowContent--inf-card-cont-der)
+    :global(.vtex-flex-layout-0-x-flexCol--img-info-cont) {
+    margin-left: 0;
+    margin-right: 5rem;
+  }
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--inf-card-cont-der) {
+  flex-direction: column;
+}
+
+@media (min-width: 750px) {
+  :global(.vtex-flex-layout-0-x-flexRowContent--inf-card-cont-der) {
+    flex-direction: row-reverse;
+  }
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--inf-card-cont) {
+  margin: 5rem 0;
+}
+
+@media only screen and (min-width: 450px) and (max-width: 1024px) {
+  :global(.vtex-flex-layout-0-x-flexRowContent--inf-card-cont)
+    :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: 50% !important;
+  }
+  :global(.vtex-flex-layout-0-x-flexRowContent--img-info-cont)
+    :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: 100% !important;
+  }
+  :global(.vtex-flex-layout-0-x-flexRowContent)
+    :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: 100% !important;
+  }
+  :global(.vtex-flex-layout-0-x-flexRow--img-info-cont) {
+    min-width: 32rem;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--img-info-cont) {
+    min-width: 32rem;
+  }
+  :global(.vtex-flex-layout-0-x-flexRowContent--inf-card-cont)
+    :global(.vtex-store-components-3-x-infoCardTextContainer--inforpuebaizq) {
+    min-width: 24rem;
+    left: -2rem !important;
+  }
+  :global(.vtex-flex-layout-0-x-flexRowContent--inf-card-cont)
+    :global(.vtex-store-components-3-x-infoCardTextContainer--inforpuebader) {
+    min-width: 24rem;
+  }
+  :global(.vtex-store-components-3-x-infoCardTextContainer--inforpuebaizq) {
+    max-width: 24rem;
+    left: -2rem !important;
+  }
+  :global(.vtex-store-components-3-x-infoCardTextContainer--inforpuebader) {
+    min-width: 24rem;
+    z-index: 1;
+    top: 3rem;
+    left: 2rem;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--img-info-cont) {
+    margin-left: 2rem;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--img-info-cont) {
+    margin-right: 2rem !important;
+  }
+  :global(.vtex-flex-layout-0-x-flexRowContent--inf-card-cont)
+    :global(.vtex-store-components-3-x-infoCardContainer--inforpuebaizq)
+    :global(.vtex-store-components-3-x-infoCardTextContainer--inforpuebaizq) {
+    left: 198px !important;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px){
+  :global(.vtex-store-components-3-x-infoCardTextContainer--inforpuebader){
+    left: 10rem;
+  }
+}
+
+
+:global(.vtex-disclosure-layout-1-x-trigger--question):focus
+  :global(.vtex-rich-text-0-x-paragraph) {
+  color: #000000 !important;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--inf-card-cont)
+  :global(.vtex-store-components-3-x-infoCardTextContainer--inforpuebaizq) {
+  left: -4rem;
+  top: 3rem;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--inf-card-cont-der),
+:global(.vtex-flex-layout-0-x-flexRow--inf-card-cont){
+  max-width: 1224px!important;
+  margin: auto;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--inf-card-cont-tab){
+  margin: 5rem 1rem;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--propo-cont){
+  flex-direction: column;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--propo-cont)
+:global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+  width: 100%!important;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--propo-cont)
+:global(.vtex-rich-text-0-x-paragraph--desc-nosotros){
+  margin-top: 0;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--propo-cont){
+  margin-top: 3rem;
+}
+
+/* Estilos pagina Nosotros Final */

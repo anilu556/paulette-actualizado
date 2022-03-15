@@ -1,0 +1,165 @@
+{
+  "store.custom#contact-us": {
+    "children": [
+      "flex-layout.row#titulo-contacto",
+      "flex-layout.row#image-deco-titulo",
+      "flex-layout.row#contact-us"
+    ]
+  },
+
+  /*Titulo*/
+  "flex-layout.row#titulo-contacto": {
+    "children":[
+      "rich-text#tit-contacto"
+    ]
+  },"rich-text#tit-contacto":{
+    "props":{
+      "text":"Contacto",
+      "blockClass": "h1-instit"
+    }
+  },
+  /*Titulo Fin*/
+
+  /* Row Contenedor Contacto*/
+  "flex-layout.row#contact-us": {
+    "props": {
+      "blockClass": "contact"
+    },
+    "children": [
+      "flex-layout.col#contact-us",
+      "flex-layout.col#infoContacto"
+    ]
+  },
+  /* Row Contenedor Contacto fin*/
+
+  /* Col Formulario Contacto*/
+  "flex-layout.col#contact-us": {
+    "children": [
+      "form#contacto"
+    ],
+    "props":{
+      "width": "45%",
+      "blockClass": "contenedor-formulario-contacto"
+    }
+  },
+  "form#contacto": {
+    "props": {
+      "entity": "Contacto",
+      "schema": "mdv1"
+    },
+    "children": [
+      "form-input.text#fullName",
+      "form-input.text#emailAddress",
+      "form-input.textarea#messageContent",
+      "form-submit"
+    ],
+    "blocks": ["form-success#contacto"]
+  },
+  "form-input.text#fullName": {
+    "props": {
+      "pointer": "#/properties/fullName",
+      "label": "Nombre"
+    }
+  },
+  "form-input.text#emailAddress": {
+    "props": {
+      "pointer": "#/properties/emailAddress",
+      "label": "Email"
+    }
+  },
+  "form-input.textarea#messageContent": {
+    "props": {
+      "pointer": "#/properties/messageContent",
+      "label": "Escribe tu mensaje"
+    }
+  },
+  "form-submit": {
+    "props": {
+      "label": "Envíar"
+
+    }
+  },
+  "form-success#contacto": {
+    "children": [
+      "rich-text#successSubmit-contacto"
+    ]
+  },
+  "rich-text#successSubmit-contacto": {
+    "props": {
+      "text": "Mensaje enviado correctamente!",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  /* Col Formulario Contacto Fin*/
+
+  /* Col info contacto */
+
+  "flex-layout.col#infoContacto":{
+    "children":[
+      "flex-layout.row#info-contacto",
+      "flex-layout.row#titinstagram",
+      "flex-layout.row#redes-sociales"
+
+    ],
+    "props":{
+      "width": "45%",
+      "blockClass": "contendor-info-contacto"
+    }
+  },
+
+  "flex-layout.row#info-contacto":{
+    "children":[
+      "rich-text#info-contacto"
+    ]
+  },
+  "rich-text#info-contacto":{
+    "props":{
+      "text":"Reposter\u00EDa Paulette S. de R.L. de C.V.\r\n\r\nTel\u00E9fono: (33) 15815099\r\nDomicilio: Volc\u00E1n Vesubio 5403, El Colli Urbano",
+      "blockClass": "info-contacto"
+    }
+  },
+
+  "flex-layout.row#redes-sociales":{
+    "children":[
+      "flex-layout.col#instagram-cta1",
+      "flex-layout.col#instagram-cta2"
+    ]
+  },
+
+  "flex-layout.col#instagram-cta1":{
+    "children":[
+      "rich-text#insta-cta1"
+    ],
+    "props":{
+      "blockClass": "contenedor-redesSoc-Contacto"
+    }
+  },
+  "rich-text#insta-cta1": {
+    "props": {
+      "text": "[@paulettepasteleria](https://www.instagram.com/paulettepasteleria)",
+      "blockClass": "link-insta"
+    }
+  },
+
+  "flex-layout.col#instagram-cta2":{
+    "children":[
+      "rich-text#insta-cta2"
+    ],
+    "props":{
+      "blockClass": "contenedor-redesSoc-Contacto"
+    }
+  },
+  "rich-text#insta-cta2": {
+    "props": {
+      "text": "[@maisonpaulettebistro](https://www.instagram.com/maisonpaulettebistro)",
+      "blockClass": "link-insta"
+    }
+  }
+
+    /* Col info contacto final */
+}
+
+
+

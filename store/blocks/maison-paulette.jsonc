@@ -1,0 +1,102 @@
+{
+  "store.custom#maison-paulette": {
+    "blocks": [
+      "responsive-layout.desktop#maison",
+      "responsive-layout.tablet#maison",
+      "responsive-layout.phone#maison"
+    ]
+  },
+
+  "responsive-layout.desktop#maison": {
+    "children": [
+      "flex-layout.row#nosotros-banner",
+      "flex-layout.row#titulo-maison",
+      "flex-layout.row#image-deco-titulo",
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#desc-maison",
+      "flex-layout.row#subtit-maison",
+      "flex-layout.row#subtit-autor-mais",
+      "flex-layout.row#boton-storelactor",
+      "flex-layout.row#titinstagram-tablet",
+      "slider-layout#text-test",
+      "flex-layout.row#newsletter",
+      "back-to-top-button"
+    ]
+  },
+  "responsive-layout.tablet#maison": {
+    "children": [
+      "flex-layout.row#nosotros-banner",
+      "flex-layout.row#titulo-maison",
+      "flex-layout.row#image-deco-titulo",
+      "flex-layout.row#desc-maison",
+      "flex-layout.row#subtit-maison",
+      "flex-layout.row#subtit-autor-mais",
+      "flex-layout.row#boton-storelactor",
+      "flex-layout.row#titinstagram-tablet",
+      "slider-layout#text-test",
+      "flex-layout.row#newsletter"
+    ]
+  },
+  "responsive-layout.phone#maison": {
+    "children": [
+      "flex-layout.row#nosotros-banner-phone",
+      "flex-layout.row#titulo-maison",
+      "flex-layout.row#image-deco-titulo",
+      "flex-layout.row#desc-maison",
+      "flex-layout.row#subtit-maison",
+      "flex-layout.row#subtit-autor-mais",
+      "flex-layout.row#boton-storelactor",
+      "flex-layout.row#titinstagram-tablet",
+      "slider-layout#text-test",
+      "flex-layout.row#newsletter-mobile"
+    ]
+  },
+
+  "flex-layout.row#titulo-maison": {
+    "children": ["rich-text#tit-maison"]
+  },
+  "rich-text#tit-maison": {
+    "props": {
+      "text": "Maison Paulette",
+      "blockClass": "h1-instit"
+    }
+  },
+
+  "flex-layout.row#desc-maison": {
+    "children": ["rich-text#desc-maison"]
+  },
+  "rich-text#desc-maison": {
+    "props": {
+      "text": "Cuatro espacios dise\u00F1ados con el concepto de caf\u00E9 bistr\u00F3 para brindar experiencias sensoriales a trav\u00E9s de historias, sabores y aromas de un mestizaje entre Francia, M\u00E9xico y el mundo. Ven, vive los detalles y disfruta de la seguridad y alta calidad en las que trabajamos d\u00EDa a d\u00EDa para brindarte momentos memorables. \u00A1Mi Maison es tu Maison!",
+      "blockClass": "desc-nosotros"
+    }
+  },
+
+  "flex-layout.row#subtit-maison": {
+    "children": ["rich-text#subtit-maison"]
+  },
+  "rich-text#subtit-maison": {
+    "props": {
+      "text": "\u201C\u00A1Creemos en los sabores del mundo, \r\ndesde los chilaquiles hasta el macaron!\u201D",
+      "blockClass": "h2-instit"
+    }
+  },
+  "flex-layout.row#subtit-autor-mais": {
+    "children": ["rich-text#subtit-autor-mais"]
+  },
+  "rich-text#subtit-autor-mais": {
+    "props": {
+      "text": "-Maison Paulette",
+      "blockClass": "h2-autor"
+    }
+  },
+  "flex-layout.row#boton-storelactor": {
+    "children": ["rich-text#link-storelocator"]
+  },
+  "rich-text#link-storelocator": {
+    "props": {
+      "text": "[Localizar mi maison más cercano](/storelocator?type=Maison)",
+      "blockClass": "link-storelocator"
+    }
+  }
+}

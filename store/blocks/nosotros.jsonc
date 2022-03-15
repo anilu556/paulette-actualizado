@@ -1,0 +1,477 @@
+{
+  "store.custom#nosotros": {
+    "blocks": [
+      "responsive-layout.desktop#nos",
+      "responsive-layout.tablet#nos",
+      "responsive-layout.phone#nos"
+    ]
+  },
+
+  "responsive-layout.desktop#nos":{
+    "children":[
+      "flex-layout.row#nosotros-banner",
+      "flex-layout.row#titulo-nosotros",
+      "flex-layout.row#image-deco-titulo",
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#desc-nosotros",
+      "flex-layout.row#subtit-nosotros",
+      "flex-layout.row#subtit-autor",
+      "flex-layout.row#txt-prop",
+      "flex-layout.row#txt-valores",
+      // "flex-layout.row#infotxtizq-nosotros",
+      // "flex-layout.row#infotxtder-nosotros",
+      // "flex-layout.row#infotxtizq-nosotros2",
+      "flex-layout.row#titinstagram-tablet",
+      "slider-layout#text-test",
+      "flex-layout.row#newsletter",
+      "back-to-top-button"
+    ]
+  },
+  "responsive-layout.tablet#nos":{
+    "children":[
+      "flex-layout.row#nosotros-banner",
+      "flex-layout.row#titulo-nosotros",
+      "flex-layout.row#image-deco-titulo",
+      "flex-layout.row#desc-nosotros",
+      "flex-layout.row#subtit-nosotros",
+      "flex-layout.row#subtit-autor",
+      "flex-layout.row#txt-prop",
+      "flex-layout.row#txt-valores",
+      // "flex-layout.row#infotxtizq-nosotros-tablet",
+      // "flex-layout.row#infotxtder-nosotros-tablet",
+      // "flex-layout.row#infotxtizq-nosotros2-tablet",
+      "flex-layout.row#titinstagram-tablet",
+      "slider-layout#text-test",
+      "flex-layout.row#newsletter"
+    ]
+  },
+  "responsive-layout.phone#nos":{
+    "children":[
+      "flex-layout.row#nosotros-banner-phone",
+      "flex-layout.row#titulo-nosotros",
+      "flex-layout.row#image-deco-titulo",
+      "flex-layout.row#desc-nosotros",
+      "flex-layout.row#subtit-nosotros",
+      "flex-layout.row#subtit-autor",
+      "flex-layout.row#txt-prop",
+      "flex-layout.row#txt-valores",
+      // "flex-layout.row#infotxtizq-nosotros",
+      // "flex-layout.row#infotxtder-nosotros",
+      // "flex-layout.row#infotxtizq-nosotros2",
+      "flex-layout.row#titinstagram-tablet",
+      "slider-layout#text-test",
+      "flex-layout.row#newsletter-mobile"
+    ]
+  },
+
+  "flex-layout.row#nosotros-banner": {
+    "children": [
+      "image#top-nosotros"
+    ],
+    "props":{
+      "fullWidth": "true"
+    }
+  },
+
+  "image#top-nosotros": {
+    "props": {
+      "src": "arquivos/P_BM_W_Nosotros.png",
+      "width": "100%"
+    }
+  },
+  "flex-layout.row#nosotros-banner-phone": {
+    "children": [
+      "image#top-nosotros-phone"
+    ],
+    "props":{
+      "fullWidth": "true"
+    }
+  },
+
+  "image#top-nosotros-phone": {
+    "props": {
+      "src": "arquivos/P_BM_M_Nosotros.png",
+      "width": "100%"
+    }
+  },
+
+  "flex-layout.row#titulo-nosotros": {
+    "children":[
+      "rich-text#tit-nosotros"
+    ]
+  },"rich-text#tit-nosotros":{
+    "props":{
+      "text":"Nosotros",
+      "blockClass": "h1-instit"
+    }
+  },
+
+  "flex-layout.row#image-deco-titulo":{
+    "children":[
+      "image#deco-titulo"
+    ]
+  }, "image#deco-titulo":{
+    "props":{
+      "src": "https://paulette.vtexassets.com/arquivos/Decoration.png",
+      "horizontalAlign": "center",
+      "fullWidth":"true"
+    }
+  },
+
+  "flex-layout.row#desc-nosotros": {
+    "children": [
+      "rich-text#desc-nosotros"
+    ]
+  },"rich-text#desc-nosotros":{
+    "props":{
+      "text":"Somos una casa mexicana de reposter\u00EDa 100% artesanal estilo franc\u00E9s con atenci\u00F3n a los detalles y cuidados en cada una de nuestras Creaciones Signature y Peque\u00F1as Dulzuras, realizadas con delicadeza por manos expertas y de manera tradicional e individual. Disfrutamos como t\u00FA de los placeres cotidianos y simples de la vida, compartir experiencias \u00FAnicas y hacerlas memorables al llevarlas hasta la puerta de tu casa.",
+      "blockClass": "desc-nosotros"
+    }
+  },
+
+  "flex-layout.row#subtit-nosotros": {
+    "children":[
+      "rich-text#subtit-nosotros"
+    ]
+  },"rich-text#subtit-nosotros":{
+    "props":{
+      "text":"\"¿La Receta?, ¡Pasión!\"",
+      "blockClass": "h2-instit"
+    }
+  },
+  "flex-layout.row#subtit-autor":{
+    "children":[
+      "rich-text#subtit-autor"
+    ]
+  },"rich-text#subtit-autor":{
+    "props":{
+      "text":"-Paulette Patisserie",
+      "blockClass": "h2-autor"
+    }
+  },
+
+  /* Row txt proposito valores etc ########################################################################################################*/
+  "flex-layout.row#txt-prop":{
+    "children":[
+      "rich-text#subtit-proposito",
+      "rich-text#txt-proposito"
+    ],
+    "props":{"blockClass":"propo-cont"}
+  },
+  "rich-text#subtit-proposito":{
+    "title": "Tit-Prop",
+    "props":{
+      "text":"Propósito",
+      "blockClass": "h2-instit"
+    }
+  },
+  "rich-text#txt-proposito":{
+    "title": "txt-Prop",
+    "props":{
+      "text":"Paulette P\u00E2tisserie nace en el 2001 con el genuino deseo de hacerte sentir especial a trav\u00E9s de nuestras creaciones de reposter\u00EDa. Cada una cuenta c\u00F3mo es preparada, horneada y decorada individualmente con una selecci\u00F3n de ingredientes tanto locales como de diferentes partes del mundo y, sobre todo, con mucho cari\u00F1o que avive el deseo de compartir con tus seres queridos y generar experiencias que se guarden en la memoria.\r\n\r\n\u201C\u00A1Un festejo sin pastel es una mera reuni\u00F3n!\u201D",
+      "blockClass": "desc-nosotros"
+    }
+  },
+
+  /* Row txt valores etc ########################################################################################################*/
+  "flex-layout.row#txt-valores":{
+    "children":[
+      "rich-text#subtit-valores",
+      "rich-text#txt-valores"
+    ],
+    "props":{"blockClass":"propo-cont"}
+  },
+  "rich-text#subtit-valores":{
+    "title": "Tit-Prop",
+    "props":{
+      "text":"Valores",
+      "blockClass": "h2-instit"
+    }
+  },
+  "rich-text#txt-valores":{
+    "title": "txt-Prop",
+    "props":{
+      "text":"Honestidad, Creatividad, Hospitalidad, Responsabilidad, Libertad, Productividad",
+      "blockClass": "desc-nosotros"
+    }
+  }
+
+  // /* Info card 1 */
+
+  // "flex-layout.row#infotxtizq-nosotros":{
+  //   "children":[
+  //     "flex-layout.col#imginfoizq-n",
+  //     "flex-layout.col#infcardizq-n"
+  //   ],
+  //   "props":{
+  //     "blockClass": "inf-card-cont"
+  //   }
+  // },"flex-layout.col#imginfoizq-n":{
+  //   "children":[
+  //     "image#mageinfocardizq-n"
+  //   ],"props":{
+  //     "horizontalAlign":"left",
+  //     "width":"70%",
+  //     "blockClass": "img-info-cont"
+  //   }
+  // },"image#mageinfocardizq-n":{
+  //   "props":{
+  //     "src":"arquivos/infocard1nosotros.png",
+  //     "blockClass": "img-info"
+  //   }
+  // },
+
+  // "flex-layout.col#infcardizq-n":{
+  //   "children":[
+  //     "info-card#pruebaizq-n"
+  //   ],"props":{
+  //     "width":"50%"
+  //   }
+  // },"info-card#pruebaizq-n":{
+  //   "props":{
+  //     "id": "info-card-example",
+  //       "isFullModeStyle": false,
+  //       "textPosition": "left",
+  //       "textMode":"rich-text",
+  //       "headline": "# Experiencia Boutiques",
+  //       "subhead": "Únete a la celebración de la magia del amor, creaciones de San Valentin para decir: ¡Te Amo!",
+  //       "callToActionText": "VER CREACIONES",
+  //       "callToActionUrl": "/creaciones",
+  //       "textAlignment": "center",
+  //       "blockClass":"inforpuebaizq"
+  //   }
+  // },
+
+  // /* Info card 2 */
+
+  // "flex-layout.row#infotxtder-nosotros":{
+  //   "children":[
+  //     "flex-layout.col#imginfoder-n",
+  //     "flex-layout.col#infcardder-n"
+
+
+  //   ],
+  //   "props":{
+  //     "blockClass": "inf-card-cont-der"
+  //   }
+  // },"flex-layout.col#imginfoder-n":{
+  //   "children":[
+  //     "image#mageinfocardder-n"
+  //   ],"props":{
+  //     "horizontalAlign":"left",
+  //     "width":"70%",
+  //     "blockClass": "img-info-cont"
+  //   }
+  // },"image#mageinfocardder-n":{
+  //   "props":{
+  //     "src":"arquivos/infocard2nosotros.png",
+  //     "blockClass": "img-info"
+  //   }
+  // },
+
+  // "flex-layout.col#infcardder-n":{
+  //   "children":[
+  //     "info-card#pruebader-n"
+  //   ],"props":{
+  //     "width":"50%"
+  //   }
+  // },"info-card#pruebader-n":{
+  //   "props":{
+  //     "id": "info-card-example",
+  //       "isFullModeStyle": false,
+  //       "textPosition": "left",
+  //       "textMode":"rich-text",
+  //       "headline": "# Experiencia Café Boutiques",
+  //       "subhead": "Visítanos y selecciona tus postres favoritos para llevar a casa o disfrutarlos ahí mismo.",
+  //       "callToActionText": "VER MÁS",
+  //       "callToActionUrl": "/storelocator",
+  //       "textAlignment": "center",
+  //       "blockClass":"inforpuebaizq"
+  //   }
+  // },
+
+  // /* Info card 3 */
+
+  // "flex-layout.row#infotxtizq-nosotros2":{
+  //   "children":[
+  //     "flex-layout.col#imginfoizq-n2",
+  //     "flex-layout.col#infcardizq-n2"
+  //   ],
+  //   "props":{
+  //     "blockClass": "inf-card-cont"
+  //   }
+  // },"flex-layout.col#imginfoizq-n2":{
+  //   "children":[
+  //     "image#mageinfocardizq-n2"
+  //   ],"props":{
+  //     "horizontalAlign":"left",
+  //     "width":"70%",
+  //     "blockClass": "img-info-cont"
+  //   }
+  // },"image#mageinfocardizq-n2":{
+  //   "props":{
+  //     "src":"arquivos/infocard3nosotros.png",
+  //     "blockClass": "img-info"
+  //   }
+  // },
+
+  // "flex-layout.col#infcardizq-n2":{
+  //   "children":[
+  //     "info-card#pruebaizq-n2"
+  //   ],"props":{
+  //     "width":"50%"
+  //   }
+  // },"info-card#pruebaizq-n2":{
+  //   "props":{
+  //     "id": "info-card-example",
+  //       "isFullModeStyle": false,
+  //       "textPosition": "left",
+  //       "textMode":"rich-text",
+  //       "headline": "# Experiencia maison paulette bistró",
+  //       "subhead": "Espacios que cuentan historias de un mestizaje gastronómico a través de sabores y aromas del mundo.",
+  //       "callToActionText": "VER MÁS",
+  //       "callToActionUrl": "/storelocator",
+  //       "textAlignment": "center",
+  //       "blockClass":"inforpuebaizq"
+  //   }
+  // },
+
+  // /* Info card 1 Tablet */
+
+  // "flex-layout.row#infotxtizq-nosotros-tablet":{
+  //   "children":[
+  //     "flex-layout.row#imaginfoizq-n-tab",
+  //     "flex-layout.row#infcardizq-n-tab"
+  //   ],
+  //   "props":{
+  //     "blockClass": "inf-card-cont-tab"
+  //   }
+  // },"flex-layout.row#imaginfoizq-n-tab":{
+  //   "children":[
+  //     "image#imageinfocardizq-n-tab"
+  //   ],"props":{
+  //     "horizontalAlign":"left",
+  //     "blockClass": "img-info-cont-tab"
+  //   }
+  // },"image#imageinfocardizq-n-tab":{
+  //   "props":{
+  //     "src":"arquivos/infocard1nosotros.png"
+  //     // "blockClass": "img-info"
+  //   }
+  // },
+
+  // "flex-layout.row#infcardizq-n-tab":{
+  //   "children":[
+  //     "info-card#pruebaizq-n-tab"
+  //   ],"props":{
+  //     // "width": "45%"
+  //   }
+  // },"info-card#pruebaizq-n-tab":{
+  //   "props":{
+  //     "id": "info-card-example",
+  //       "isFullModeStyle": false,
+  //       "textPosition": "left",
+  //       "textMode":"rich-text",
+  //       "headline": "# Experiencia Boutiques",
+  //       "subhead": "Únete a la celebración de la magia del amor, creaciones de San Valentin para decir: ¡Te Amo!",
+  //       "callToActionText": "VER CREACIONES",
+  //       "callToActionUrl": "/creaciones",
+  //       "textAlignment": "center",
+  //       "blockClass":"inforpuebaizq"
+  //   }
+  // },
+
+  // /* Info card 2 tablet*/
+
+  // "flex-layout.row#infotxtder-nosotros-tablet":{
+  //   "children":[
+  //     "flex-layout.row#infcardder-n-tab",
+  //     "flex-layout.row#imginfoder-n-tab"
+
+
+  //   ],
+  //   "props":{
+  //     "blockClass": "inf-card-cont-tab"
+  //   }
+  // },"flex-layout.row#imginfoder-n-tab":{
+  //   "children":[
+  //     "image#mageinfocardder-n-tab"
+  //   ],"props":{
+  //     "horizontalAlign":"left",
+  //     "blockClass": "img-info-cont-tad-der"
+  //   }
+  // },"image#mageinfocardder-n-tab":{
+  //   "props":{
+  //     "src":"arquivos/infocard2nosotros.png"
+  //     // "blockClass": "img-info"
+  //   }
+  // },
+
+  // "flex-layout.row#infcardder-n-tab":{
+  //   "children":[
+  //     "info-card#pruebader-n-tab"
+  //   ],"props":{
+  //     // "width": "45%"
+  //   }
+  // },"info-card#pruebader-n-tab":{
+  //   "props":{
+  //     "id": "info-card-example",
+  //       "isFullModeStyle": false,
+  //       "textPosition": "left",
+  //       "textMode":"rich-text",
+  //       "headline": "# Experiencia Café Boutiques",
+  //       "subhead": "Visítanos y selecciona tus postres favoritos para llevar a casa o disfrutarlos ahí mismo.",
+  //       "callToActionText": "VER MÁS",
+  //       "callToActionUrl": "/storelocator",
+  //       "textAlignment": "center",
+  //       "blockClass":"inforpuebader"
+  //   }
+  // },
+
+  // /* Info card 3 tablet */
+
+  // "flex-layout.row#infotxtizq-nosotros2-tablet":{
+  //   "children":[
+  //     "flex-layout.col#imginfoizq-n2-tab",
+  //     "flex-layout.col#infcardizq-n2-tab"
+  //   ],
+  //   "props":{
+  //     "blockClass": "inf-card-cont-tab"
+  //   }
+  // },"flex-layout.col#imginfoizq-n2-tab":{
+  //   "children":[
+  //     "image#mageinfocardizq-n2-tab"
+  //   ],"props":{
+  //     "horizontalAlign":"left",
+  //     "blockClass": "img-info-cont-tab"
+  //   }
+  // },"image#mageinfocardizq-n2-tab":{
+  //   "props":{
+  //     "src":"arquivos/infocard3nosotros.png"
+  //     // "blockClass": "img-info"
+  //   }
+  // },
+
+  // "flex-layout.col#infcardizq-n2-tab":{
+  //   "children":[
+  //     "info-card#pruebaizq-n2"
+  //   ],"props":{
+  //     // "width": "45%"
+  //   }
+  // },"info-card#pruebaizq-n2-tab":{
+  //   "props":{
+  //     "id": "info-card-example",
+  //       "isFullModeStyle": false,
+  //       "textPosition": "left",
+  //       "textMode":"rich-text",
+  //       "headline": "# Experiencia maison paulette bistró",
+  //       "subhead": "Espacios que cuentan historias de un mestizaje gastronómico a través de sabores y aromas del mundo.",
+  //       "callToActionText": "VER MÁS",
+  //       "callToActionUrl": "/storelocator",
+  //       "textAlignment": "center",
+  //       "blockClass":"inforpuebaizq"
+  //   }
+  // }
+
+}
+

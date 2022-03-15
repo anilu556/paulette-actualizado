@@ -1,0 +1,138 @@
+{
+  "store.custom#bolsa-trabajo": {
+    "children": [
+      "flex-layout.row#titulo-bolsa",
+      "flex-layout.row#image-deco-titulo",
+      "flex-layout.row#bolsa-content",
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#form-bolsa"
+    ]
+  },
+
+  /*Titulo*/
+  "flex-layout.row#titulo-bolsa": {
+    "children":[
+      "rich-text#tit-bolsa"
+    ]
+  },"rich-text#tit-bolsa":{
+    "props":{
+      "text":"Bolsa de trabajo",
+      "blockClass": "h1-instit"
+    }
+  },
+  /*Titulo Fin*/
+
+  /* Row Contenedor Bolsa Trabajo*/
+  "flex-layout.row#bolsa-content": {
+    "props": {
+      "blockClass": "container-bolsaTrabajo"
+    },
+    "children": [
+      "flex-layout.row#infoBolsa"
+    ]
+  },
+
+  /* Row Contenedor Bolsa Trabajo fin*/
+
+  /* Col info Bolsa Trabajo */
+
+  "flex-layout.row#infoBolsa":{
+    "children":[
+      "flex-layout.row#info-bolsa"
+    ],
+    "props":{
+      "blockClass": "contendor-info-contacto",
+      "width": "100%"
+    }
+  },
+
+  "flex-layout.row#info-bolsa":{
+    "children":[
+      "rich-text#info-bolsa",
+      "rich-text#info-bolsa-email"
+
+    ]
+  },
+  "rich-text#info-bolsa":{
+    "props":{
+      "text":"¿TE GUSTARIA SER PARTE DEL EQUIPO PAULETTE?",
+      "blockClass": "h2-bolsa"
+    }
+  },
+  "rich-text#info-bolsa-email":{
+    "props":{
+      "text":"Env\u00EDa tu CV a [equipo@pasteleriapaulette.com](mailto:equipo@pasteleriapaulette.com) o llena el siguiente formulario siguiendo el diseño de contacto",
+      "blockClass": "info-bolsa"
+    }
+  },
+    /* Col info contacto final */
+
+    /* Formulario Bolsa Trabajo*/
+    "flex-layout.row#form-bolsa":{
+      "children":["form#bolsaTrabajo"],
+      "props":{"blockClass":"container-formulario"}
+    },
+    "form#bolsaTrabajo": {
+      "props": {
+        "entity": "BolsaTrabajo",
+        "schema": "mdv1"
+      },
+      "children": [
+        "form-input.text#fullName-bolsa",
+        "form-input.text#emailAddress-bolsa",
+        "form-input.text#telephone",
+        "form-input.upload#cargarCV",
+        "form-submit#bolsa"
+      ],
+      "blocks": ["form-success#bolsa"]
+    },
+    "form-input.text#fullName-bolsa": {
+      "props": {
+        "pointer": "#/properties/fullName",
+        "label": "Nombre Completo"
+      }
+    },
+    "form-input.text#emailAddress-bolsa": {
+      "props": {
+        "pointer": "#/properties/emailAddress",
+        "label": "Email"
+
+      }
+    },
+    "form-input.text#telephone": {
+      "props": {
+        "pointer": "#/properties/telephone",
+        "label": "Teléfono"
+      }
+    },
+    "form-input.upload#cargarCV":{
+      "props": {
+        "pointer": "#/properties/cvFile",
+        "blockClass":"dropdown-upload",
+        "accept": ".doc,.pdf,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+      }
+    },
+    "form-submit#bolsa": {
+      "props": {
+        "label": "Envíar"
+
+      }
+    },
+    "form-success#bolsa": {
+      "children": [
+        "rich-text#successSubmit-bolsa"
+      ]
+    },
+    "rich-text#successSubmit-bolsa": {
+      "props": {
+        "text": "Mensaje enviado correctamente!",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER"
+      }
+    }
+
+    /* Formulario Bolsa Trabajo Final*/
+}
+
+
+

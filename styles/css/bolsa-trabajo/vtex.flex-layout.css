@@ -1,0 +1,59 @@
+:global(.vtex-flex-layout-0-x-flexRowContent--contendor-info-contacto)
+  :global(.vtex-flex-layout-0-x-flexRowContent){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--contendor-info-contacto)
+  :global(.vtex-flex-layout-0-x-flexRowContent)
+    :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+      width: 100%!important;
+}
+
+:global(.vtex-rich-text-0-x-container--h2-bolsa){
+  justify-content: center;
+}
+
+:global(.vtex-rich-text-0-x-container--info-bolsa){
+  justify-content: center;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--h2-bolsa){
+  text-align: center;
+  margin: 4rem 1rem 0 1rem;
+  font-family: "CaslonPro";
+  font-size: 18px;
+  color: #000000;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--info-bolsa){
+  font-family: 'Caslon-Pro';
+  color: #000000;
+}
+
+:global(.vtex-rich-text-0-x-link--info-bolsa){
+  text-decoration: none;
+  color: #000000;
+  font-family: 'Caslon-Italic';
+  font-weight: bold;
+  transition: 0.3s ease all;
+}
+
+:global(.vtex-rich-text-0-x-link--info-bolsa):hover{
+  color: #EFB3CB;
+}
+
+:global(.vtex-slider-layout-0-x-sliderLayoutContainer--carrusel-bolsa){
+  width: 70%;
+  margin: auto;
+  margin-bottom: 4rem;
+}
+
+:global(.vtex-slider-layout-0-x-sliderLeftArrow--carrusel-bolsa){
+  left: -50px;
+}
+:global(.vtex-slider-layout-0-x-sliderRightArrow--carrusel-bolsa){
+  right: -50px;
+}

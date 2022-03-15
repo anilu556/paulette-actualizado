@@ -1,0 +1,116 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#footer-1-desktop"
+    ]
+  },
+  "flex-layout.row#footer-1-desktop": {
+    "children": [
+      "vtex.menu@2.x:menu#paulette",
+      "vtex.menu@2.x:menu#creaciones",
+      "image#logofooter",
+      "vtex.menu@2.x:menu#shoponline",
+      "flex-layout.col#bolsa-payMeth-container"
+    ],
+    "props": {
+      "blockClass": "footer-menu-row",
+      "paddingTop": 6,
+      "paddingBottom": 3,
+      "horizontalAlign": "CENTER",
+      "fullWidth": true
+    }
+  },
+
+  "footer-layout.mobile": {
+    "children": [
+
+      "flex-layout.row#1-footer-mobile"
+    ]
+  },
+  "flex-layout.row#1-footer-mobile": {
+    "props": {
+      "paddingTop": 4,
+      "paddingBottom": 4,
+      "blockClass":"rowmobile"
+    },
+    "children": [
+      "flex-layout.col#logo-mobile",
+      "vtex.menu@2.x:menu#footer-mobile",
+      "flex-layout.row#logos-pymt-methods-mobile",
+      "flex-layout.row#logos-pymt-methods-mobile2"
+    ]
+  },
+
+  "flex-layout.col#logo-mobile":{
+    "children":[
+      "image#logofooter"
+    ],"props":{
+      "horizontalAlign":"center",
+      "blockClass": "footerLogo"
+    }
+  },
+  "flex-layout.col#bolsa-payMeth-container":{
+    "children":[
+      "vtex.menu@2.x:menu#bolsa",
+      "flex-layout.row#logos-pymt-methods1",
+      "flex-layout.row#logos-pymt-methods2"
+    ],
+    "props":{
+      "blockClass": "pay-meth-container"
+    }
+  },
+  "flex-layout.row#logos-pymt-methods1":{
+    "children":["image#visa", "image#master", "image#amex"],
+    "props":{"blockClass":"paymt-1"}
+  },
+  "flex-layout.row#logos-pymt-methods2":{
+    "children":["image#paypal", "image#openPay"],
+    "props":{"blockClass":"paymt-2"}
+  },
+  "image#visa": {
+    "props": {
+      "src": "/arquivos/cib_visa.svg",
+      "maxHeight": 50
+    }
+  },
+  "image#master": {
+    "props": {
+      "src": "/arquivos/cib_cc-mastercard.svg",
+      "maxHeight": 34,
+      "blockClass":"master"
+    }
+  },
+  "image#amex": {
+    "props": {
+      "src": "/arquivos/american-express.svg",
+      "maxHeight": 24,
+      "blockClass":"amex"
+    }
+  },
+  "image#paypal": {
+    "props": {
+      "src": "assets/paypal logo.svg",
+      "maxHeight": 24
+    }
+  },
+  "image#openPay": {
+    "props": {
+      "src": "assets/openpay logo.svg",
+      "maxHeight": 24
+    }
+  },
+
+  "flex-layout.row#logos-pymt-methods-mobile":{
+    "children":["image#visa", "image#master", "image#amex"],
+    "props":{"blockClass":"pymt-mtds-container"}
+  },
+  "flex-layout.row#logos-pymt-methods-mobile2":{
+    "children":["image#paypal", "image#openPay"],
+    "props":{"blockClass":"pymt-mtds-container"}
+  }
+}
+
+

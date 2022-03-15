@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Gotham-thin";
+  src: url(assets/fonts/Gotham-Thin.ttf);
+}
+
+@font-face {
+  font-family: "Sofia-Pro";
+  src: url(assets/fonts/Sofia-Pro.ttf);
+}
+
+@font-face {
+  font-family: "Caslon-Italic";
+  src: url(assets/fonts/Caslon-Italic.ttf);
+}
+
+@font-face {
+  font-family: "Didot";
+  src: url(assets/fonts/Didot.ttf);
+}
+
+@font-face {
+  font-family: "CaslonPro";
+  src: url(assets/fonts/ACaslonPro-Regular.otf);
+}
+
+@font-face {
+  font-family: "SofiaProBold";
+  src: url(assets/fonts/Sofia-Pro-Bold.otf);
+}

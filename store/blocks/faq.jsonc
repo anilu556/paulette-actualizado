@@ -1,0 +1,997 @@
+{
+  "store.custom#faq": {
+    "children": [
+      "responsive-layout.desktop#faq",
+      "responsive-layout.tablet#faq",
+      "responsive-layout.phone#faq"
+    ]
+  },
+
+  "responsive-layout.desktop#faq":{
+    "children":[
+      "flex-layout.row#faq-banner",
+      "flex-layout.row#faq",
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#titinstagram-tablet",
+      "slider-layout#text-test",
+      "flex-layout.row#newsletter",
+      "back-to-top-button"
+    ]
+  },
+  "responsive-layout.tablet#faq":{
+    "children":[
+      "flex-layout.row#faq-banner",
+      "flex-layout.row#faq",
+      "flex-layout.row#titinstagram-tablet",
+      "slider-layout#text-test",
+      "flex-layout.row#newsletter"
+    ]
+  },
+  "responsive-layout.phone#faq":{
+    "children":[
+      "flex-layout.row#faq-banner-phone",
+      "flex-layout.row#faq",
+      "flex-layout.row#titinstagram-tablet",
+      "slider-layout#text-test",
+      "flex-layout.row#newsletter-mobile"
+    ]
+  },
+
+  "flex-layout.row#faq-banner": {
+    "children": [
+      "image#top-faq"
+    ],
+    "props":{
+      "fullWidth": "true"
+    }
+  },
+
+  "image#top-faq": {
+    "props": {
+      "src": "arquivos/P_BI_W_Preguntas-Frecuentes.png",
+      "width": "100%"
+    }
+  },
+  "flex-layout.row#faq-banner-phone": {
+    "children": [
+      "image#top-faq-phone"
+    ],
+    "props":{
+      "fullWidth": "true"
+    }
+  },
+
+  "image#top-faq-phone": {
+    "props": {
+      "src": "arquivos/P_BI_M_Preguntas-Frecuentes.png",
+      "width": "100%"
+    }
+  },
+
+  "flex-layout.row#faq": {
+    "props": {
+      "blockClass": "faq"
+    },
+    "children": [
+      "flex-layout.col#faq"
+    ]
+  },
+
+  "flex-layout.col#faq": {
+    "children": [
+      "rich-text#faq",
+      "flex-layout.row#image-deco-titulo",
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#titrosa-faq",
+      "flex-layout.row#icons-faq-container",
+      "disclosure-layout-group#group"
+    ]
+  },
+
+  "rich-text#faq": {
+    "props": {
+      "text": "Preguntas Frecuentes",
+      "blockClass": "h1-instit"
+    }
+  },
+
+  "flex-layout.row#titrosa-faq":{
+    "props":{
+      "blockClass":"home-page-flag-faq"
+    },
+    "children":[
+      "flex-layout.col#etiqueta-faq"
+    ]
+  },
+
+    "flex-layout.col#etiqueta-faq":{
+      "children":[
+        "rich-text#tit1rosa-faq"
+      ],"props":{
+        "horizontalAlign": "center",
+        "blockClass": "flag-title-faq"
+      }
+  },
+
+    "rich-text#tit1rosa-faq":{
+      "props":{
+        "text":"Comprar en paulette es muy fácil",
+        "blockClass": "titulorosa",
+        "textPosition": "center"
+      }
+  },
+
+  "flex-layout.row#icons-faq-container":{
+    "children":[
+      "flex-layout.row#agrega-carrito",
+      "flex-layout.row#datos",
+      "flex-layout.row#dom",
+      "flex-layout.row#listo"
+    ],
+    "props":{
+      "blockClass": "icons-container"
+    }
+  },
+
+  "flex-layout.row#agrega-carrito":{
+    "children":[
+      "flex-layout.row#icon-cart",
+      "rich-text#icons1"
+    ],
+    "props":{
+      "blockClass": "icon-cont"
+    }
+  },
+
+  "flex-layout.row#icon-cart":{
+    "children":[
+      "image#icon-cart"
+    ],"props":{"blockClass":"img-faq-container"}
+  },"image#icon-cart":{
+    "props":{
+      "src": "arquivos/asset-bolsa.svg",
+      "horizontalAlign": "center",
+      "fullWidth":"true"
+    }
+  },"rich-text#icons1":{
+    "props":{
+      "text":"Agrega tus creaciones favoritas al carrito de compras",
+      "blockClass":"txt-icons-faq"
+    }
+},
+
+"flex-layout.row#datos":{
+  "children":[
+    "flex-layout.row#icon-datos",
+    "rich-text#icons2"
+  ],
+  "props":{
+    "blockClass": "icon-cont"
+  }
+},"flex-layout.row#icon-datos":{
+  "children":[
+    "image#icon-datos"
+  ],"props":{"blockClass":"img-faq-container"}
+},"image#icon-datos":{
+  "props":{
+    "src": "arquivos/asset-user.svg",
+    "horizontalAlign": "center",
+    "fullWidth":"true"
+  }
+},"rich-text#icons2":{
+  "props":{
+    "text":"Ingresa tus datos y elige tu forma de pago",
+    "blockClass":"txt-icons-faq"
+  }
+},
+
+"flex-layout.row#dom":{
+  "children":[
+    "flex-layout.row#icon-dom",
+    "rich-text#icons3"
+  ],
+  "props":{
+    "blockClass": "icon-cont"
+  }
+},"flex-layout.row#icon-dom":{
+  "children":[
+    "image#icon-dom"
+  ],"props":{"blockClass":"img-faq-container"}
+},"image#icon-dom":{
+  "props":{
+    "src": "arquivos/asset-house.svg",
+    "horizontalAlign": "center",
+    "fullWidth":"true"
+  }
+},"rich-text#icons3":{
+  "props":{
+    "text":"Verifica que tu código postal este dentro del área de entrega",
+    "blockClass":"txt-icons-faq"
+  }
+},
+
+"flex-layout.row#listo":{
+  "children":[
+    "flex-layout.row#icon-listo",
+    "rich-text#icons4"
+  ],
+  "props":{
+    "blockClass": "icon-cont"
+  }
+},"flex-layout.row#icon-listo":{
+  "children":[
+    "image#icon-listo"
+  ],"props":{"blockClass":"img-faq-container"}
+},"image#icon-listo":{
+  "props":{
+    "src": "arquivos/asset-cake.svg",
+    "horizontalAlign": "center",
+    "fullWidth":"true"
+  }
+},"rich-text#icons4":{
+  "props":{
+    "text":"¡Listo! Espera tus creaciones a la puerta de tu casa",
+    "blockClass":"txt-icons-faq"
+  }
+},
+
+
+  "disclosure-layout-group#group": {
+    "children": [
+      "disclosure-layout#1",
+      "disclosure-layout#2",
+      "disclosure-layout#3",
+      "disclosure-layout#4",
+      "disclosure-layout#5",
+      "disclosure-layout#6",
+      "disclosure-layout#7",
+      "disclosure-layout#8",
+      "disclosure-layout#9",
+      "disclosure-layout#10",
+      "disclosure-layout#11",
+      "disclosure-layout#12",
+      "disclosure-layout#13",
+      "disclosure-layout#14",
+      "disclosure-layout#15",
+      "disclosure-layout#16",
+      "disclosure-layout#17",
+      "disclosure-layout#18",
+      "disclosure-layout#19",
+      "disclosure-layout#20",
+      "disclosure-layout#21",
+      "disclosure-layout#22",
+      "disclosure-layout#23"
+    ],
+    "props":{
+      "blockClass": "preguntas-frec"
+    }
+  },
+
+  "disclosure-layout#1": {
+    "props": {
+      "animated": true,
+      "blockClass": "answer-cont"
+    },
+    "children": ["disclosure-trigger#1", "disclosure-content#1"]
+  },
+  "disclosure-trigger#1": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["rich-text#question1", "disclosure-state-indicator"]
+  },
+  "disclosure-content#1": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer1"]
+  },
+  "rich-text#question1": {
+    "props": {
+      "text": "1.- ¿Por qué sí registrarme?",
+      "blockClass": "pregunta"
+    }
+  },
+  "rich-text#answer1": {
+    "props": {
+      "text": "Al crear una cuenta tu experiencia se vuelve más rápida, fácil y divertida. De esta forma se podrán guardar tus datos como dirección, correo electrónico, y/o método de pago de manera que tu próxima compra todo sea más rápido y puedas disfrutar tu creación favorita."
+    }
+  },
+
+  "disclosure-layout#2": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#2", "disclosure-content#2"]
+  },
+  "disclosure-trigger#2": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["rich-text#question2", "disclosure-state-indicator"]
+  },
+  "disclosure-content#2": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer2"]
+  },
+  "rich-text#question2": {
+    "props": {
+      "text": "2.- ¿Tengo que tener un usuario para poder comprar en línea?",
+      "blockClass": "pregunta"
+    }
+  },
+  "rich-text#answer2": {
+    "props": {
+      "text": "¡No te preocupes! puedes comprar sin necesidad de registrarte."
+    }
+  },
+
+
+  "disclosure-layout#3": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#3", "disclosure-content#3"]
+  },
+  "disclosure-trigger#3": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["rich-text#question3", "disclosure-state-indicator"]
+  },
+  "disclosure-content#3": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer3"]
+  },
+  "rich-text#question3": {
+    "props": {
+      "text": "3.- ¿Cómo puedo saber si mi domicilio está dentro de la zona de entrega?"
+    }
+  },
+  "rich-text#answer3": {
+    "props": {
+      "text": "Puedes revisar dentro de nuestro menú el área de entrega con la que actualmente contamos."
+    }
+  },
+
+
+  "disclosure-layout#4": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#4", "disclosure-content#4"]
+  },
+  "disclosure-trigger#4": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["rich-text#question4", "disclosure-state-indicator"]
+  },
+  "disclosure-content#4": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer4"]
+  },
+  "rich-text#question4": {
+    "props": {
+      "text": "4.- ¿Puedo pedir a diferentes domicilios?"
+    }
+  },
+  "rich-text#answer4": {
+    "props": {
+      "text": "¡Por supuesto! puedes agregar todos los domicilios que quieras, asegurate que estén dentro de nuestra zona de entrega."
+    }
+  },
+  "disclosure-layout#5": {
+    "props": {
+      "animated": true,
+      "blockClass": "answer-cont"
+    },
+    "children": ["disclosure-trigger#5", "disclosure-content#5"]
+  },
+  "disclosure-trigger#5": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["rich-text#question5", "disclosure-state-indicator"]
+  },
+  "disclosure-content#5": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer5"]
+  },
+  "rich-text#question5": {
+    "props": {
+      "text": "5.- ¿Con qué métodos de pago puedo efectuar mi pedido?"
+    }
+  },
+  "rich-text#answer5": {
+    "props": {
+      "text": "Podrás hacer tu pago de diferentes formas: por transferencia, a través de portales OpenPay y/o PayPal."
+    }
+  },
+
+  "disclosure-layout#6": {
+    "props": {
+      "animated": true,
+      "blockClass": "answer-cont"
+    },
+    "children": ["disclosure-trigger#6", "disclosure-content#6"]
+  },
+  "disclosure-trigger#6": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["rich-text#question6", "disclosure-state-indicator"]
+  },
+  "disclosure-content#6": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer6"]
+  },
+  "rich-text#question6": {
+    "props": {
+      "text": "6.- ¿Puedo hacer el pago en efectivo?"
+    }
+  },
+  "rich-text#answer6": {
+    "props": {
+      "text": "Por el momento no contamos con método de pago en efectivo."
+    }
+  },
+  "disclosure-layout#7": {
+    "props": {
+      "animated": true,
+      "blockClass": "answer-cont"
+    },
+    "children": ["disclosure-trigger#7", "disclosure-content#7"]
+  },
+  "disclosure-trigger#7": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["rich-text#question7", "disclosure-state-indicator"]
+  },
+  "disclosure-content#7": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer7"]
+  },
+  "rich-text#question7": {
+    "props": {
+      "text": "7.- ¿Es seguro registrar mi tarjeta de crédito?"
+    }
+  },
+  "rich-text#answer7": {
+    "props": {
+      "text": "Si es seguro comprar en línea con nosotros ya que utilizamos portales como OpenPay y PayPal de forma que nosotros no tenemos acceso a tu información."
+    }
+  },
+  "disclosure-layout#8": {
+    "props": {
+      "animated": true,
+      "blockClass": "answer-cont"
+    },
+    "children": ["disclosure-trigger#8", "disclosure-content#8"]
+  },
+  "disclosure-trigger#8": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["rich-text#question8", "disclosure-state-indicator"]
+  },
+  "disclosure-content#8": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer8"]
+  },
+  "rich-text#question8": {
+    "props": {
+      "text": "8.- ¿Qué creaciones podré encontrar en línea?"
+    }
+  },
+  "rich-text#answer8": {
+    "props": {
+      "text": "Todas nuestras creaciones las encontrarás en nuestra página en línea. Si no la encuentras, de seguro ¡alguien más te la ganó y se agotó! Pero no te preocupes estamos horneando más creaciones para ti :)"
+    }
+  },
+
+  "disclosure-layout#9": {
+    "props": {
+      "animated": true,
+      "blockClass": "answer-cont"
+    },
+    "children": ["disclosure-trigger#9", "disclosure-content#9"]
+  },
+  "disclosure-trigger#9": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["rich-text#question9", "disclosure-state-indicator"]
+  },
+  "disclosure-content#9": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer9"]
+  },
+  "rich-text#question9": {
+    "props": {
+      "text": "9.- ¿Cómo saber si hay disponibilidad de producto?"
+    }
+  },
+  "rich-text#answer9": {
+    "props": {
+      "text": "Al momento de seleccionar tus creaciones favoritas podrás revisar cuales tenemos disponibles al momento."
+    }
+  },
+
+  "disclosure-layout#10": {
+    "props": {
+      "animated": true,
+      "blockClass": "answer-cont"
+    },
+    "children": ["disclosure-trigger#10", "disclosure-content#10"]
+  },
+  "disclosure-trigger#10": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["rich-text#question10", "disclosure-state-indicator"]
+  },
+  "disclosure-content#10": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer10"]
+  },
+  "rich-text#question10": {
+    "props": {
+      "text": "10.- ¿Qué costo de envío tienen los pedidos?"
+    }
+  },
+  "rich-text#answer10": {
+    "props": {
+      "text": "Tiene un costo de $50 pesos de envío."
+    }
+  },
+
+  "disclosure-layout#11": {
+    "props": {
+      "animated": true,
+      "blockClass": "answer-cont"
+    },
+    "children": ["disclosure-trigger#11", "disclosure-content#11"]
+  },
+  "disclosure-trigger#11": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["rich-text#question11", "disclosure-state-indicator"]
+  },
+  "disclosure-content#11": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer11"]
+  },
+  "rich-text#question11": {
+    "props": {
+      "text": "11.- ¿Cómo conservo mis creaciones?"
+    }
+  },
+  "rich-text#answer11": {
+    "props": {
+      "text": "Manténla en refrigeración antes de comerla, te recomendamos consumirla antes de los 2 días de haberla comprado."
+    }
+  },
+
+  "disclosure-layout#12": {
+    "props": {
+      "animated": true,
+      "blockClass": "answer-cont"
+    },
+    "children": ["disclosure-trigger#12", "disclosure-content#12"]
+  },
+  "disclosure-trigger#12": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["rich-text#question12", "disclosure-state-indicator"]
+  },
+  "disclosure-content#12": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer12"]
+  },
+  "rich-text#question12": {
+    "props": {
+      "text": "12.- ¿Cómo rastreo mi pedido?"
+    }
+  },
+  "rich-text#answer12": {
+    "props": {
+      "text": "Dentro de tu cuenta, encontrarás un apartado con el nombre “Rastrear mi pedido” ahí podrás revisar en qué parte del camino va tu creación favorita."
+    }
+  },
+
+  "disclosure-layout#13": {
+    "props": {
+      "animated": true,
+      "blockClass": "answer-cont"
+    },
+    "children": ["disclosure-trigger#13", "disclosure-content#13"]
+  },
+  "disclosure-trigger#13": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["rich-text#question13", "disclosure-state-indicator"]
+  },
+  "disclosure-content#13": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer13"]
+  },
+  "rich-text#question13": {
+    "props": {
+      "text": "13.- ¿Cuándo llegará mi pedido?"
+    }
+  },
+  "rich-text#answer13": {
+    "props": {
+      "text": "Sabemos que ansías por comerte tu creación favorita, si la pediste para el mismo día en un rango de horario; no tarda en llegar, estamos terminando de hornearla para tí, si lo pediste para el día siguiente o para fechas programadas, no hay tanta prisa está a tiempo aún."
+    }
+  },
+
+  "disclosure-layout#14": {
+    "props": {
+      "animated": true,
+      "blockClass": "answer-cont"
+    },
+    "children": ["disclosure-trigger#14", "disclosure-content#14"]
+  },
+  "disclosure-trigger#14": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["rich-text#question14", "disclosure-state-indicator"]
+  },
+  "disclosure-content#14": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer14"]
+  },
+  "rich-text#question14": {
+    "props": {
+      "text": "14.- ¿Dentro de qué horario de entrega puedo recibir mi pedido?"
+    }
+  },
+  "rich-text#answer14": {
+    "props": {
+      "text": "Podrás elegir el horario que mejor te acomode de 10am a 6pm de lunes a domingo para recibir tu creación a la puerta de tu casa y Disfrutar Paulette en Casa."
+    }
+  },
+
+  "disclosure-layout#15": {
+    "props": {
+      "animated": true,
+      "blockClass": "answer-cont"
+    },
+    "children": ["disclosure-trigger#15", "disclosure-content#15"]
+  },
+  "disclosure-trigger#15": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["rich-text#question15", "disclosure-state-indicator"]
+  },
+  "disclosure-content#15": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer15"]
+  },
+  "rich-text#question15": {
+    "props": {
+      "text": "15.- ¿Cómo sé cuál es el tamaño de las creaciones para elegir el más adecuado?"
+    }
+  },
+  "rich-text#answer15": {
+    "props": {
+      "text": "Dentro de la descripción y detalles sobre nuestras creaciones podrás encontrar mayor información para poder elegir la creación indicada para el festejo que quieres celebrar. Hay para todos :)"
+    }
+  },
+
+  "disclosure-layout#16": {
+    "props": {
+      "animated": true,
+      "blockClass": "answer-cont"
+    },
+    "children": ["disclosure-trigger#16", "disclosure-content#16"]
+  },
+  "disclosure-trigger#16": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["rich-text#question16", "disclosure-state-indicator"]
+  },
+  "disclosure-content#16": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer16"]
+  },
+  "rich-text#question16": {
+    "props": {
+      "text": "16.- ¿Tienen productos Libres de Azúcar?"
+    }
+  },
+  "rich-text#answer16": {
+    "props": {
+      "text": "¡Si tenemos! Puedes encontrarlas dentro de nuestro apartado de “Libres de Azúcar”. Adicional te recomendamos que consultes a tu médico si tienes algún padecimiento que te impida probar alguna de nuestras creaciones."
+    }
+  },
+
+  "disclosure-layout#17": {
+    "props": {
+      "animated": true,
+      "blockClass": "answer-cont"
+    },
+    "children": ["disclosure-trigger#17", "disclosure-content#17"]
+  },
+  "disclosure-trigger#17": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["rich-text#question17", "disclosure-state-indicator"]
+  },
+  "disclosure-content#17": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer17"]
+  },
+  "rich-text#question17": {
+    "props": {
+      "text": "17.- ¿Cómo saber si mi pedido se realizó?"
+    }
+  },
+  "rich-text#answer17": {
+    "props": {
+      "text": "Recibirás un correo de confirmación de tu pedido al email con el que te registraste, de esta forma estaremos en contacto contigo."
+    }
+  },
+
+  "disclosure-layout#18": {
+    "props": {
+      "animated": true,
+      "blockClass": "answer-cont"
+    },
+    "children": ["disclosure-trigger#18", "disclosure-content#18"]
+  },
+  "disclosure-trigger#18": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["rich-text#question18", "disclosure-state-indicator"]
+  },
+  "disclosure-content#18": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer18"]
+  },
+  "rich-text#question18": {
+    "props": {
+      "text": "18.- ¿Puedo revisar el status de mi pedido?"
+    }
+  },
+  "rich-text#answer18": {
+    "props": {
+      "text": "¡Sí! Puedes ingresar a tu cuenta y en el apartado “Mis Pedidos” revisar en qué status se encuentra tu pedido y rastrearlo hasta que llegue a la puerta de tu casa."
+    }
+  },
+
+  "disclosure-layout#19": {
+    "props": {
+      "animated": true,
+      "blockClass": "answer-cont"
+    },
+    "children": ["disclosure-trigger#19", "disclosure-content#19"]
+  },
+  "disclosure-trigger#19": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["rich-text#question19", "disclosure-state-indicator"]
+  },
+  "disclosure-content#19": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer19"]
+  },
+  "rich-text#question19": {
+    "props": {
+      "text": "19.- ¿Recibiré algún mensaje cuando llegue mi pedido?"
+    }
+  },
+  "rich-text#answer19": {
+    "props": {
+      "text": "¡Así es! estarás recibiendo notificaciones al correo que registraste una vez que se confirme tu pedido, cuando esté en camino y también cuando esté llegando al domicilio final."
+    }
+  },
+
+  "disclosure-layout#20": {
+    "props": {
+      "animated": true,
+      "blockClass": "answer-cont"
+    },
+    "children": ["disclosure-trigger#20", "disclosure-content#20"]
+  },
+  "disclosure-trigger#20": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["rich-text#question20", "disclosure-state-indicator"]
+  },
+  "disclosure-content#20": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer20"]
+  },
+  "rich-text#question20": {
+    "props": {
+      "text": "20.- ¿Puedo cancelar mi pedido?"
+    }
+  },
+  "rich-text#answer20": {
+    "props": {
+      "text": "Una vez que recibiste la confirmación de tu pedido y se efectuó la transacción de pago no podrás cancelar tu pedido."
+    }
+  },
+
+  "disclosure-layout#21": {
+    "props": {
+      "animated": true,
+      "blockClass": "answer-cont"
+    },
+    "children": ["disclosure-trigger#21", "disclosure-content#21"]
+  },
+  "disclosure-trigger#21": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["rich-text#question21", "disclosure-state-indicator"]
+  },
+  "disclosure-content#21": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer21"]
+  },
+  "rich-text#question21": {
+    "props": {
+      "text": "21.- ¿Puedo recoger mi pedido en mi boutique favorita?"
+    }
+  },
+  "rich-text#answer21": {
+    "props": {
+      "text": "Por el momento no, ya que tu pedido es tramitado en línea para que Disfrutes Paulette en Casa."
+    }
+  },
+
+  "disclosure-layout#22": {
+    "props": {
+      "animated": true,
+      "blockClass": "answer-cont"
+    },
+    "children": ["disclosure-trigger#22", "disclosure-content#22"]
+  },
+  "disclosure-trigger#22": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["rich-text#question22", "disclosure-state-indicator"]
+  },
+  "disclosure-content#22": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer22"]
+  },
+  "rich-text#question22": {
+    "props": {
+      "text": "22.- ¿Puedo hacer un pedido especial con anticipación?"
+    }
+  },
+  "rich-text#answer22": {
+    "props": {
+      "text": "Sí. Para hacer un pedido especial ya sea una creación sobre diseño puedes mandarnos directamente un correo a la dirección info@pasteleriapaulette.com o bien un whatsapp al 3316232715. Una vez hecho tu pedido especial no podremos cancelarlo."
+    }
+  },
+
+  "disclosure-layout#23": {
+    "props": {
+      "animated": true,
+      "blockClass": "answer-cont"
+    },
+    "children": ["disclosure-trigger#23", "disclosure-content#23"]
+  },
+  "disclosure-trigger#23": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["rich-text#question23", "disclosure-state-indicator"]
+  },
+  "disclosure-content#23": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer23"]
+  },
+  "rich-text#question23": {
+    "props": {
+      "text": "23.- ¿Cómo puedo solicitar mi factura?"
+    }
+  },
+  "rich-text#answer23": {
+    "props": {
+      "text": "Para solicitar tu factura deberás hacerlo a través del formulario que encontrarás en el apartado de “Facturación” que se encuentra en la parte inferior de nuestra página. Ahí encontrarás todo para poder facturar."
+    }
+  },
+
+  "disclosure-state-indicator": {
+    "props": {
+      "Show": "icon-caret#down",
+      "Hide": "icon-caret#up"
+    }
+  },
+  "icon-caret#down": {
+    "props": {
+      "orientation": "down"
+    }
+  },
+  "icon-caret#up": {
+    "props": {
+      "orientation": "up"
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "store.custom#zona-cobertura": {
+    "blocks": [
+      "responsive-layout.desktop#zona-cobertura",
+      "responsive-layout.tablet#zona-cobertura",
+      "responsive-layout.phone#zona-cobertura"
+    ]
+  },
+
+  "responsive-layout.desktop#zona-cobertura":{
+    "children":[
+      "flex-layout.row#titulo-zona-cobertura",
+      "flex-layout.row#image-deco-titulo",
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#img-Mapa-Desktop",
+      "flex-layout.row#titinstagram-tablet",
+      "slider-layout#text-test",
+      "flex-layout.row#newsletter",
+      "back-to-top-button"
+    ]
+  },
+  "responsive-layout.tablet#zona-cobertura":{
+    "children":[
+      "flex-layout.row#titulo-zona-cobertura",
+      "flex-layout.row#image-deco-titulo",
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#img-Mapa-Mobile",
+      "flex-layout.row#titinstagram-tablet",
+      "slider-layout#text-test",
+      "flex-layout.row#newsletter"
+    ]
+  },
+  "responsive-layout.phone#zona-cobertura":{
+    "children":[
+      "flex-layout.row#titulo-zona-cobertura",
+      "flex-layout.row#image-deco-titulo",
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#img-Mapa-Mobile",
+      "flex-layout.row#titinstagram-tablet",
+      "slider-layout#text-test",
+      "flex-layout.row#newsletter-mobile"
+    ]
+  },
+
+  "flex-layout.row#titulo-zona-cobertura": {
+    "children":[
+      "rich-text#tit-zona-cobertura"
+    ]
+  },"rich-text#tit-zona-cobertura":{
+    "props":{
+      "text":"Zona de Cobertura",
+      "blockClass": "h1-instit"
+    }
+  },
+  
+  "flex-layout.row#img-Mapa-Desktop":{
+    "children":[
+      "image#imgCoberturaDesktop"
+    ],
+    "props":{
+      "blockClass": "img-map-container"
+    }
+  },
+  "flex-layout.row#img-Mapa-Mobile":{
+    "children":[
+      "image#imgCoberturaMobile"
+    ],
+    "props":{
+      "blockClass": "img-map-container"
+    }
+  },
+  "image#imgCoberturaDesktop":{
+    "props":{
+      "blockClass": "img-map",
+      "src": "assets/paulette-map800X800.png",
+      "horizontalAlign": "center",
+      "fullWidth":"true"
+    }
+  },
+  "image#imgCoberturaMobile":{
+    "props":{
+      "blockClass": "img-map",
+      "src": "assets/paulette-map1200X1400.png",
+      "horizontalAlign": "center"
+    }
+  }
+}
+

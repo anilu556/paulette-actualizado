@@ -1,0 +1,194 @@
+{
+  "vtex.menu@2.x:menu#websites": {
+    "children": [
+      "menu-item#nosotros",
+      "menu-item#boutiques",
+      "menu-item#maison",
+      "menu-item#sweet",
+      "menu-item#como-comprar"
+    ],"props":{
+      "blockClass":"menpi"
+    }
+  },
+  "menu-item#nosotros": {
+    "props": {
+      "id": "menu-item-nosotros",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/nosotros",
+        "noFollow": false,
+        "tagTitle": "Nosotros",
+        "text": "Nosotros"
+      },
+      "blockClass":"itempaginas"
+    }
+  },
+  "menu-item#boutiques": {
+    "props": {
+      "id": "menu-item-boutiques",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/boutiques",
+        "noFollow": false,
+        "tagTitle": "Boutiques",
+        "text": "Boutiques"
+      },
+      "blockClass":"itempaginas"
+    }
+  },
+  "menu-item#maison": {
+    "props": {
+      "id": "menu-item-maison",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/maison-paulette",
+        "noFollow": false,
+        "tagTitle": "Maison Paulette",
+        "text": "Maison Paulette"
+      },
+      "blockClass":"itempaginas"
+    }
+  },
+
+  "menu-item#sweet": {
+    "props": {
+      "id": "menu-item-sweet",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/sweet-catering",
+        "noFollow": false,
+        "tagTitle": "Sweet Catering",
+        "text": "Sweet Catering"
+      },
+      "blockClass":"itempaginas"
+    }
+  },
+  "menu-item#como-comprar": {
+    "props": {
+      "id": "menu-item-sweet",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/como-comprar",
+        "noFollow": false,
+        "tagTitle": "Como Comprar",
+        "text": "Como Comprar"
+      },
+      "blockClass":"itempaginas"
+    }
+  },
+  "vtex.menu@2.x:menu#institutional": {
+    "children": [
+      "flex-layout.row#srchlogcart"
+    ]
+  }, "flex-layout.row#srchlogcart":{
+    "children":[
+      "flex-layout.col#srch",
+      "flex-layout.col#logfavoritos",
+      "flex-layout.col#logdesk",
+      "flex-layout.col#cart"
+    ],"props":{
+      "blockClass":"rowcontentsrch"
+    }
+  },
+  "flex-layout.col#srch":{
+    "children":[
+      "search-bar"
+    ],"props":{
+      "blockClass":"srchlogcart"
+    }
+  },"flex-layout.col#logdesk":{
+    "children":[
+      "login"
+    ],"props":{
+      "blockClass":"srchlogcart",
+      "verticalAlign":"middle"
+    }
+  },
+  "flex-layout.col#cart":{
+    "children":[
+      "minicart.v2"
+    ],"props":{
+      "blockClass":"srchlogcart"
+    }
+  },
+  "flex-layout.col#logfavoritos":{
+    "children":[
+      "image#icon-favoritos"
+    ],"props":{
+      "blockClass":"link-wishlist",
+      "verticalAlign":"middle"
+    }
+  },
+  "image#icon-favoritos": {
+    "props": {
+      "src": "/arquivos/wish-icon.svg",
+      "maxHeight": 34,
+      "alt": "wishlist-link-icon",
+      "link": {"url": "/account#/wishlist"}
+    }
+  },
+  "vtex.menu@2.x:menu#institutional-mobile": {
+    "children": [
+      "drawer#search",
+      "minicart.v2"
+    ],"props":{
+      "blockClass":"instmob"
+    }
+  },
+  "login#mobile":{
+    "props":{
+      "blockClass":"lg-mobile"
+    }
+  },
+  "drawer#search":{
+    "props":{
+      "isFullWidth": true,
+      "slideDirection": "leftToRight",
+      "text":"Buscar:",
+      "blockClass":"draw-search"
+    },
+    "children":[
+      "flex-layout.row#titsearch"
+    ]
+  },"flex-layout.row#titsearch":{
+    "children":[
+      "rich-text#titsrch",
+      "search-bar"
+    ],"props":{
+      "blockClass":"contentsrch"
+    }
+  },"rich-text#titsrch":{
+    "props":{
+      "text": "Buscar:",
+      "blockClass":"titsrch"
+    }
+  },
+  "search-bar": {
+    "blocks": ["autocomplete-result-list.v2"],
+    "props": {
+      "openAutocompleteOnFocus": true
+    }
+  },
+  "autocomplete-result-list.v2": {
+    "blocks": ["product-summary.shelf"]
+  }
+
+
+
+
+}

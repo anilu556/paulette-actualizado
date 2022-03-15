@@ -1,0 +1,138 @@
+{
+  "store.custom#sweet-catering": {
+    "blocks": [
+      "responsive-layout.desktop#sweet",
+      "responsive-layout.tablet#sweet",
+      "responsive-layout.phone#sweet"
+    ]
+  },
+
+  "responsive-layout.desktop#sweet":{
+    "children":[
+      "flex-layout.row#nosotros-banner",
+      "flex-layout.row#titulo-sweet",
+      "flex-layout.row#image-deco-titulo",
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#desc-sweet",
+      "flex-layout.row#form-cotizar-catering",
+      "flex-layout.row#titinstagram-tablet",
+      "slider-layout#text-test",
+      "flex-layout.row#newsletter",
+      "back-to-top-button"
+    ]
+  },
+  "responsive-layout.tablet#sweet":{
+    "children":[
+      "flex-layout.row#nosotros-banner",
+      "flex-layout.row#titulo-sweet",
+      "flex-layout.row#image-deco-titulo",
+      "flex-layout.row#desc-sweet",
+      "flex-layout.row#form-cotizar-catering",
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#titinstagram-tablet",
+      "slider-layout#text-test",
+      "flex-layout.row#newsletter"
+    ]
+  },
+  "responsive-layout.phone#sweet":{
+    "children":[
+      "flex-layout.row#nosotros-banner-phone",
+      "flex-layout.row#titulo-sweet",
+      "flex-layout.row#image-deco-titulo",
+      "flex-layout.row#desc-sweet",
+      "flex-layout.row#form-cotizar-catering",
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#titinstagram-tablet",
+      "slider-layout#text-test",
+      "flex-layout.row#newsletter-mobile"
+    ]
+  },
+
+  "flex-layout.row#titulo-sweet": {
+    "children":[
+      "rich-text#tit-sweet"
+    ]
+  },"rich-text#tit-sweet":{
+    "props":{
+      "text":"Sweet Catering",
+      "blockClass": "h1-instit"
+    }
+  },
+
+  "flex-layout.row#desc-sweet": {
+    "children": [
+      "rich-text#desc-sweet"
+    ]
+  },"rich-text#desc-sweet":{
+    "props":{
+      "text":"Postres riqu\u00EDsimos, muchos colores y sabores, reunidos en grandes mesas que invitan a la tentaci\u00F3n generando un punto de reuni\u00F3n para tus invitados, quienes deciden su postre favorito y la cantidad ideal. \u00A1Contact\u00E1nos!",
+      "blockClass": "desc-nosotros"
+    }
+  },
+
+  /* Formulario Cotizar Catering ####################################################################################################################################*/
+  "flex-layout.row#form-cotizar-catering":{
+    "children":["form#cotiza-catering"],
+    "props":{"blockClass":"container-formulario"}
+  },
+  "form#cotiza-catering": {
+    "props": {
+      "entity": "Cotizacion",
+      "schema": "mdv1"
+    },
+    "children": [
+      "form-input.text#fullName-cater",
+      "form-input.text#emailAddress-cater",
+      "form-input.text#telephone-cater",
+      "form-input.radiogroup#cater",
+      "form-submit#cater"
+    ],
+    "blocks": ["form-success#contacto-cater"]
+  },
+  "form-input.text#fullName-cater": {
+    "props": {
+      "pointer": "#/properties/fullName",
+      "label": "Nombre Completo"
+    }
+  },
+  "form-input.text#telephone-cater": {
+    "props": {
+      "pointer": "#/properties/telephone",
+      "label": "Teléfono"
+    }
+  },
+  "form-input.text#emailAddress-cater": {
+    "props": {
+      "pointer": "#/properties/emailAddress",
+      "label": "Email"
+    }
+  },
+  "form-input.radiogroup#cater":{
+    "props": {
+      "pointer": "#/properties/serviceRequest",
+      "label": "Servicio a cotizar"
+    }
+  },
+  "form-submit#cater": {
+    "props": {
+      "label": "Envíar"
+
+    }
+  },
+  "form-success#contacto-cater": {
+    "children": [
+      "rich-text#successSubmit-cater"
+    ]
+  },
+  "rich-text#successSubmit-cater": {
+    "props": {
+      "text": "Solicitud de cotización enviada correctamente!",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  }
+
+  /* Formulario Cotizar Catering Final*/
+
+}
+

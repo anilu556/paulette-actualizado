@@ -1,0 +1,222 @@
+{
+  "order-placed": {
+    "blocks": ["op-header", "op-order"]
+  },
+  "op-header": {
+    "children": [
+      "op-section#topBanner",
+      "op-section#confirmation",
+      "op-section#leyendaPago",
+      "op-section#notices",
+      "op-summary-section",
+      "op-bank-invoice-section"
+    ]
+  },
+  "op-section#topBanner":{
+    "props": {
+      "name": "topBanner"
+    },   
+  "children":[
+    "rich-text#top-text"
+  ]
+},
+  "rich-text#top-text":{
+    "props":{
+      "text":"'¿La receta? ¡Pasión!'",
+      "blockClass": "textoTop",
+      "textPosition": "center"
+    }
+  },
+  "op-section#confirmation": {
+    "props": {
+      "name": "confirmation",
+      "marginBottom": 9,
+      "borderless": true
+    },
+    "children": [
+      "op-confirmation-icon",
+      "op-confirmation-title",
+      "flex-layout.row#imgPastel",
+      "flex-layout.row#bienvenida",
+      "flex-layout.row#bienvenidaSubtext",
+      "op-confirmation-message",
+      "flex-layout.row#confirmation-buttons"
+    ]
+  },
+  "flex-layout.row#imgPastel":{
+    "children":[
+      "flex-layout.col#imgConfirmation"
+    ],
+    "props":{"blockClass":"imgPastel"}
+  },"flex-layout.col#imgConfirmation":{
+    "children":[
+      "image#imagePastel"
+    ],"props":{
+      "horizontalAlign":"center",
+      "blockClass":"img-1-col"
+     }
+    },
+    "image#imagePastel":{
+      "props":{
+        "src":"https://paulette.vteximg.com.br/arquivos/P_EGifs_2.gif",
+        "blockClass":"img-past-1"
+      }
+  },
+  "flex-layout.row#bienvenida":{
+    "children":[
+      "flex-layout.col#bienvenidaText"
+      ],
+      "props":{"blockClass":"imgPastel"}
+  },
+  "flex-layout.col#bienvenidaText":{
+    "children":[
+      "rich-text#leyendaBienvenida"
+    ],"props":{
+      "horizontalAlign": "center",
+      "blockClass": "bienvenida"
+    }
+  },
+  "rich-text#leyendaBienvenida":{
+    "props":{
+      "text":"Bienvenue",
+      "blockClass": "textoBienvenida",
+      "textPosition": "center"
+    }
+  },
+  "flex-layout.row#bienvenidaSubtext":{
+    "children":[
+      "flex-layout.col#bienvenidaSubtext"
+      ],
+      "props":{"blockClass":"imgPastel"}
+  },
+  "flex-layout.col#bienvenidaSubtext":{
+    "children":[
+      "rich-text#subtextBienvenida"
+    ],"props":{
+      "horizontalAlign": "center",
+      "blockClass": "bienvenida"
+    }
+  },
+  "rich-text#subtextBienvenida":{
+    "props":{
+      "text":"Nuestras delicadas manos están trabajando artesanalmente en tu exquisito pedido.",
+      "blockClass": "textoBienvenida",
+      "textPosition": "center"
+    }
+  },
+  "flex-layout.row#confirmation-buttons": {
+    "props": {
+      "blockClass": "confirmationButtons",
+      "marginTop": 8,
+      "marginBottom": 8,
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true
+    },
+    "children": ["flex-layout.col#confirmation-buttons"]
+  },
+  "flex-layout.col#confirmation-buttons": {
+    "children": ["op-print-button"]
+  },
+  "op-section#leyendaPago":{
+    "props": {
+      "name": "leyendaPago"
+    },
+    "children":[
+      "flex-layout.row#leyenda"
+    ]
+  }, 
+  "flex-layout.row#leyenda":{
+    "children":[
+      "rich-text#leyendaTexto"
+    ],"props":{
+      "horizontalAlign": "center",
+      "blockClass": "pagoTienda"
+    }
+  },
+
+  "rich-text#leyendaTexto":{
+    "props":{
+      "text":"En caso de que hayas elegido pago en tienda, favor de hacerlo antes de 24 hrs para evitar que el pedido sea cancelado",
+      "blockClass": "textoPagoTienda",
+      "textPosition": "center"
+    }
+  },
+  "op-section#notices": {
+    "props": {
+      "name": "notices",
+      "marginBottom": 9,
+      "borderless": true
+    },
+    "children": [
+      "op-notices"
+    ]
+  },
+  // each order section
+  "op-order": {
+    "children": [
+      "flex-layout.row#order-header",
+      "op-order-split-notice",
+      "op-order-customer",
+      "op-section#payments",
+      "op-section#pickup-packages",
+      "op-section#delivery-packages",
+      "op-order-takeaway-packages",
+      "op-order-total"
+    ]
+  },
+  // each order header
+  "flex-layout.row#order-header": {
+    "props": {
+      "fullWidth": true,
+      "colSizing": "auto",
+      "colGap": 5,
+      "marginBottom": 5
+    },
+    "children": [
+      "flex-layout.col#order-header-info",
+      "flex-layout.col#order-header-options"
+    ]
+  },
+  "flex-layout.col#order-header-info": {
+    "children": ["op-order-number", "op-order-datetime", "op-order-seller"]
+  },
+  "flex-layout.col#order-header-options": {
+    "children": ["responsive-layout.desktop#order-options-desktop"]
+  },
+  "responsive-layout.desktop#order-options-desktop": {
+    "children": ["op-order-options"]
+  },
+  // payment section
+  "op-section#payments": {
+    "props": {
+      "name": "paymentMethods"
+    },
+    "children": [
+      "op-order-payment",
+      "responsive-layout.mobile#order-options-mobile"
+    ]
+  },
+  // bottom of top section of order header
+  "responsive-layout.mobile#order-options-mobile": {
+    "children": ["op-order-options#mobile"]
+  },
+  "op-order-options#mobile": {
+    "props": {
+      "blockClass": "mobile",
+      "fullWidth": true
+    }
+  },
+  "op-section#pickup-packages": {
+    "props": {
+      "name": "pickupPackages"
+    },
+    "children": ["op-order-pickup-packages"]
+  },
+  "op-section#delivery-packages": {
+    "props": {
+      "name": "deliveryPackages"
+    },
+    "children": ["op-order-delivery-packages"]
+  }
+}

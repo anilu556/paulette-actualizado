@@ -1,0 +1,268 @@
+{
+  "store.custom#boutiques": {
+    "blocks": [
+      "responsive-layout.desktop#bou",
+      "responsive-layout.tablet#bou",
+      "responsive-layout.phone#bou"
+    ]
+  },
+
+  "responsive-layout.desktop#bou":{
+    "children":[
+      "flex-layout.row#nosotros-banner",
+      "flex-layout.row#titulo-boutiq",
+      "flex-layout.row#image-deco-titulo",
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#desc-boutiq",
+      "flex-layout.row#boton-storelactor-boutiques",
+      "flex-layout.row#infotxtizq-boutiq",
+      "flex-layout.row#infotxtder-boutiq",
+      "flex-layout.row#titinstagram-tablet",
+      "slider-layout#text-test",
+      "flex-layout.row#newsletter",
+      "back-to-top-button"
+    ]
+  },
+  "responsive-layout.tablet#bou":{
+    "children":[
+      "flex-layout.row#nosotros-banner",
+      "flex-layout.row#titulo-boutiq",
+      "flex-layout.row#image-deco-titulo",
+      "flex-layout.row#desc-boutiq",
+      "flex-layout.row#boton-storelactor-boutiques",
+      "flex-layout.row#infotxtizq-boutiq-tablet",
+      "flex-layout.row#infotxtder-boutiq-tablet",
+      "flex-layout.row#titinstagram-tablet",
+      "slider-layout#text-test",
+      "flex-layout.row#newsletter"
+    ]
+  },
+  "responsive-layout.phone#bou":{
+    "children":[
+      "flex-layout.row#nosotros-banner-phone",
+      "flex-layout.row#titulo-boutiq",
+      "flex-layout.row#image-deco-titulo",
+      "flex-layout.row#desc-boutiq",
+      "flex-layout.row#boton-storelactor-boutiques",
+      "flex-layout.row#infotxtizq-boutiq",
+      "flex-layout.row#infotxtder-boutiq",
+      "flex-layout.row#titinstagram-tablet",
+      "slider-layout#text-test",
+      "flex-layout.row#newsletter-mobile"
+    ]
+  },
+
+  "flex-layout.row#titulo-boutiq": {
+    "children":[
+      "rich-text#tit-boutiq"
+    ]
+  },"rich-text#tit-boutiq":{
+    "props":{
+      "text":"Boutiques",
+      "blockClass": "h1-instit"
+    }
+  },
+
+  "flex-layout.row#desc-boutiq": {
+    "children": [
+      "rich-text#desc-boutiq"
+    ]
+  },"rich-text#desc-boutiq":{
+    "props":{
+      "text":"\u00A1Descubre cada temporada las diferentes colecciones dise\u00F1adas para que tus celebraciones sean memorables!",
+      "blockClass": "desc-nosotros"
+    }
+  },
+
+  /* Info card 1 */
+
+  "flex-layout.row#infotxtizq-boutiq":{
+    "children":[
+      "flex-layout.col#imginfoizq-b",
+      "flex-layout.col#infcardizq-b"
+    ],
+    "props":{
+      "blockClass": "inf-card-cont"
+    }
+  },"flex-layout.col#imginfoizq-b":{
+    "children":[
+      "image#mageinfocardizq-b"
+    ],"props":{
+      "horizontalAlign":"left",
+      "width":"70%",
+      "blockClass": "img-info-cont"
+    }
+  },"image#mageinfocardizq-b":{
+    "props":{
+      "src":"arquivos/infocard1nosotros.png",
+      "blockClass": "img-info"
+    }
+  },
+  "flex-layout.col#infcardizq-b":{
+    "children":[
+      "info-card#pruebaizq-b"
+    ],"props":{
+      "width":"50%"
+    }
+  },"info-card#pruebaizq-b":{
+    "props":{
+      "id": "info-card-example",
+        "isFullModeStyle": false,
+        "textPosition": "left",
+        "textMode":"rich-text",
+        "headline": "# BOUTIQUES CAFÉ",
+        "subhead": "Visítanos y selecciona tus postres favoritos para llevar a casa o disfrutarlos ahí mismo.",
+        "callToActionText": "VER MÁS",
+        "callToActionUrl": "/storelocator",
+        "textAlignment": "center",
+        "blockClass":"inforpuebaizq"
+    }
+  },
+
+  /* Info card 2 */
+
+  "flex-layout.row#infotxtder-boutiq":{
+    "children":[
+      "flex-layout.col#imginfoder-b",
+      "flex-layout.col#infcardder-b"
+    ],
+    "props":{
+      "blockClass": "inf-card-cont-der"
+    }
+  },"flex-layout.col#imginfoder-b":{
+    "children":[
+      "image#mageinfocardder-b"
+    ],"props":{
+      "horizontalAlign":"left",
+      "width":"70%",
+      "blockClass": "img-info-cont"
+    }
+  },"image#mageinfocardder-b":{
+    "props":{
+      "src":"arquivos/infocard2nosotros.png",
+      "blockClass": "img-info"
+    }
+  },
+
+  "flex-layout.col#infcardder-b":{
+    "children":[
+      "info-card#pruebader-b"
+    ],"props":{
+      "width":"50%"
+    }
+  },"info-card#pruebader-b":{
+    "props":{
+      "id": "info-card-example",
+        "isFullModeStyle": false,
+        "textPosition": "left",
+        "textMode":"rich-text",
+        "headline": "# MAISON PAULETTE BISTRÓ",
+        "subhead": "Espacios que cuentan historias de un mestizaje gastronómico a través de sabores y aromas del mundo.",
+        "callToActionText": "VER MÁS",
+        "callToActionUrl": "/storelocator",
+        "textAlignment": "center",
+        "blockClass":"inforpuebaizq"
+    }
+  },
+
+  /* Info card 1 Tablet */
+
+  "flex-layout.row#infotxtizq-boutiq-tablet":{
+    "children":[
+      "flex-layout.row#imaginfoizq-b-tab",
+      "flex-layout.row#infcardizq-b-tab"
+    ],
+    "props":{
+      "blockClass": "inf-card-cont-tab"
+    }
+  },"flex-layout.row#imaginfoizq-b-tab":{
+    "children":[
+      "image#imageinfocardizq-b-tab"
+    ],"props":{
+      "horizontalAlign":"left",
+      "blockClass": "img-info-cont-tab"
+    }
+  },"image#imageinfocardizq-b-tab":{
+    "props":{
+      "src":"arquivos/infocard1nosotros.png"
+      // "blockClass": "img-info"
+    }
+  },
+
+  "flex-layout.row#infcardizq-b-tab":{
+    "children":[
+      "info-card#pruebaizq-b-tab"
+    ],"props":{
+      // "width": "45%"
+    }
+  },"info-card#pruebaizq-b-tab":{
+    "props":{
+      "id": "info-card-example",
+        "isFullModeStyle": false,
+        "textPosition": "left",
+        "textMode":"rich-text",
+        "headline": "# BOUTIQUES CAFÉ",
+        "subhead": "Visítanos y selecciona tus postres favoritos para llevar a casa o disfrutarlos ahí mismo.",
+        "callToActionText": "VER MÁS",
+        "callToActionUrl": "/storelocator",
+        "textAlignment": "center",
+        "blockClass":"inforpuebaizq"
+    }
+  },
+
+  /* Info card 2 tablet*/
+
+  "flex-layout.row#infotxtder-boutiq-tablet":{
+    "children":[
+      "flex-layout.row#infcardder-b-tab",
+      "flex-layout.row#imginfoder-b-tab"
+    ],
+    "props":{
+      "blockClass": "inf-card-cont-tab"
+    }
+  },"flex-layout.row#imginfoder-b-tab":{
+    "children":[
+      "image#mageinfocardder-b-tab"
+    ],"props":{
+      "horizontalAlign":"left",
+      "blockClass": "img-info-cont-tad-der"
+    }
+  },"image#mageinfocardder-b-tab":{
+    "props":{
+      "src":"arquivos/infocard2nosotros.png"
+      // "blockClass": "img-info"
+    }
+  },
+
+  "flex-layout.row#infcardder-b-tab":{
+    "children":[
+      "info-card#pruebader-b-tab"
+    ],"props":{
+      // "width": "45%"
+    }
+  },"info-card#pruebader-b-tab":{
+    "props":{
+      "id": "info-card-example",
+        "isFullModeStyle": false,
+        "textPosition": "left",
+        "textMode":"rich-text",
+        "headline": "# MAISON PAULETTE BISTRÓ",
+        "subhead": "Espacios que cuentan historias de un mestizaje gastronómico a través de sabores y aromas del mundo.",
+        "callToActionText": "VER MÁS",
+        "callToActionUrl": "/storelocator",
+        "textAlignment": "center",
+        "blockClass":"inforpuebader"
+    }
+  },
+  "flex-layout.row#boton-storelactor-boutiques":{
+    "children":[
+      "rich-text#link-storelocator-boutiques"
+    ]
+  },
+  "rich-text#link-storelocator-boutiques":{
+    "props":{
+      "text":"[Localizar mi boutique más cercana](/storelocator)",
+      "blockClass":"link-storelocator"
+    }
+  }
+}

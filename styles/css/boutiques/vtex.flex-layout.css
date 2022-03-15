@@ -1,0 +1,38 @@
+:global(.vtex-store-components-3-x-imageElement--banner-boutiques){
+  height: 266px;
+  object-fit: cover;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--h2-boutiques) {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "CaslonPro";
+  font-size: 20px;
+  color: #000000;
+}
+
+:global(.vtex-rich-text-0-x-container--h2-boutiques) {
+  display: flex;
+  justify-content: center;
+}
+
+:global(.vtex-rich-text-0-x-container--link-storelocator){
+  justify-content: center;
+}
+:global(.vtex-rich-text-0-x-paragraph--link-storelocator){
+  margin: 0;
+}
+:global(.vtex-rich-text-0-x-link--link-storelocator){
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 40px;
+  border: 1px solid #efb3cb;
+  background-color: #efb3cb;
+  transition: 0.3s ease all;
+}
+:global(.vtex-rich-text-0-x-link--link-storelocator):hover{
+  color: #000000;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+}
+

@@ -1,0 +1,639 @@
+/* add transitions */
+:global(.vtex-sticky-layout-0-x-container)
+  :global(.vtex-store-components-3-x-logoLink),
+:global(.vtex-sticky-layout-0-x-container)
+  :global(.vtex-minicart-2-x-openIconContainer),
+:global(.vtex-sticky-layout-0-x-container)
+  :global(.vtex-store-components-3-x-searchBarContainer) {
+  transition: all 0.3s ease;
+  display: block;
+}
+
+/* desktop/mobile main header padding and background transitions */
+:global(.vtex-flex-layout-0-x-flexRowContent--main-header),
+:global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
+  transition: background 0.3s ease;
+  will-change: padding, background;
+}
+
+/* main header desktop has a bigger padding when not stuck */
+:global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* add a box-shadow to desktop/mobile header when stuck */
+:global(.vtex-sticky-layout-0-x-wrapper--stuck)
+  :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
+:global(.vtex-sticky-layout-0-x-wrapper--stuck)
+  :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+}
+
+/*
+ * remove the extra padding when stuck from the desktop header
+ * we add a transition only when "stuck" for the "unstick" step seem faster
+ */
+:global(.vtex-sticky-layout-0-x-wrapper--stuck)
+  :global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
+  transition: padding 0.3s ease, background 0.3s ease;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* if supported add some translucency to the desktop/mobile header background */
+@supports (backdrop-filter: blur(5px)) {
+  :global(.vtex-sticky-layout-0-x-wrapper--stuck)
+    :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
+  :global(.vtex-sticky-layout-0-x-wrapper--stuck)
+    :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
+    backdrop-filter: blur(8px);
+  }
+
+  /* header background when stuck and not hovered */
+  :global(.vtex-sticky-layout-0-x-wrapper--stuck):not(:hover)
+    :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
+  :global(.vtex-sticky-layout-0-x-wrapper--stuck):not(:hover)
+    :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
+    background: rgba(240, 240, 240, 0.8);
+  }
+}
+
+/* stick wrapper with the same color as the desktop/mobile header */
+:global(.vtex-sticky-layout-0-x-wrapper--sticky-header) {
+  background-color: #f0f0f0;
+}
+
+/* resize the logo for neat effect */
+:global(.vtex-sticky-layout-0-x-wrapper--stuck)
+  :global(.vtex-store-components-3-x-logoLink) {
+  transform: scale(0.85);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :global(.vtex-sticky-layout-0-x-container)
+    :global(.vtex-store-components-3-x-logoLink),
+  :global(.vtex-sticky-layout-0-x-container)
+    :global(.vtex-minicart-2-x-openIconContainer),
+  :global(.vtex-sticky-layout-0-x-container)
+    :global(.vtex-store-components-3-x-searchBarContainer),
+  :global(.vtex-sticky-layout-0-x-wrapper--stuck)
+    :global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
+    transition: none;
+  }
+}
+
+/* -------------------   PAULETTE STILO ------------------- */
+
+:global(.vtex-store-components-3-x-notificationBarContainer--notif-bar) {
+  background-color: #efb3cb;
+  text-decoration: none;
+  font-family: Sofia-Pro;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+:global(.vtex-store-components-3-x-searchBarInnerContainer)
+  :global(.vtex-input-prefix__group) {
+  border-color: #ffffff;
+  min-height: 45px;
+}
+
+:global(.vtex-store-components-3-x-searchBarInnerContainer)
+  :global(.vtex-input-prefix__group)
+  :global(.vtex-styleguide-9-x-input)::-webkit-input-placeholder {
+  color: #efb3cb;
+  text-align: right;
+  font-size: 0px;
+}
+
+:global(.vtex-store-components-3-x-searchBarInnerContainer)
+  :global(.vtex-input-prefix__group)::before:hover {
+  cursor: pointer;
+}
+
+:global(.vtex-store-components-3-x-searchIcon) {
+  display: none;
+}
+
+:global(.vtex-store-components-3-x-searchBarIcon--search)::after {
+  content: url(https://paulette.vtexassets.com/arquivos/Search.png);
+}
+:global(.vtex-menu-2-x-styledLinkContent--itempaginas) {
+  color: #000000;
+  font-family: "Caslon-Italic";
+  font-size: 16px;
+  font-weight: 600;
+}
+
+:global(.vtex-menu-2-x-styledLinkContent--itemprin) {
+  font-size: 14px;
+  color: #000000;
+  font-weight: 500;
+  transition: 0.3s ease all;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
+  background-color: #ffffff;
+}
+
+:global(.vtex-store-drawer-0-x-openIconContainer) {
+  color: #efb3cb;
+}
+
+:global(.vtex-sticky-layout-0-x-wrapper--stuck):not(:hover)
+  :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
+  background-color: #ffffff;
+}
+
+:global(.vtex-menu-2-x-styledLinkContent--itemprin):hover {
+  color: #efb3cb;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--srchlogcart)
+  :global(.vtex-minicart-2-x-minicartWrapperContainer)
+  :global(.vtex-minicart-2-x-openIconContainer) {
+  width: 40px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--rowcontentsrch) {
+  margin-right: 50px;
+  align-items: center;
+}
+
+:global(.vtex-minicart-2-x-openIconContainer--mc-mobile) {
+  width: 16px;
+}
+:global(.vtex-menu-2-x-menuContainerNav--instmob) {
+  /* 14/05 */
+  padding-right: 0px;
+}
+
+:global(.vtex-minicart-2-x-minicartQuantityBadge--mc-mobile) {
+  top: 1rem;
+  right: -9px;
+}
+
+:global(.vtex-store-components-3-x-notificationBarContainer--notif-bar) {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 7px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--menu-link) {
+  align-items: center;
+}
+
+@media (max-width: 450px) {
+  :global(.vtex-store-components-3-x-notificationBarContainer--notif-bar) {
+    margin-bottom: 0;
+  }
+}
+
+:global(.vtex-store-components-3-x-searchBarContainer) {
+  padding-right: 7px;
+}
+
+:global(.vtex-minicart-2-x-minicartIconContainer) {
+  right: 12px;
+  margin: 0;
+  top: 5px;
+}
+
+@media (max-width: 800px) {
+  :global(.vtex-store-components-3-x-logoLink) {
+    margin-left: 30px;
+  }
+}
+
+:global(.vtex-menu-2-x-menuContainer--instmob) {
+  padding-right: 10px;
+}
+
+:global(.vtex-store-components-3-x-notificationBarInner--notif-bar) {
+  min-height: auto;
+  padding: 10.5px;
+}
+:global(.vtex-store-components-3-x-logoImage--logo-principal) {
+  margin-top: -2.5rem;
+}
+
+:global(.vtex-menu-2-x-styledLinkContainer--itempaginas) {
+  margin: 0;
+  margin-left: 1.5rem;
+}
+
+:global(.vtex-menu-2-x-styledLinkContainer--itempaginas):hover {
+  cursor: pointer;
+}
+
+:global(.vtex-menu-2-x-menuItem) :global(.vtex-menu-2-x-menuItem--itemprin) {
+  margin: 0;
+}
+
+:global(.vtex-store-components-3-x-searchBarIcon--search){
+  position: absolute;
+  right: -2%;
+  top: 15%;
+}
+
+:global(.vtex-minicart-2-x-minicartQuantityBadgeDefault){
+  top: -7px!important;
+  right: -11px!important;
+}
+
+:global(.vtex-menu-2-x-styledLinkContainer--itemprin){
+  padding: 1rem 0;
+}
+
+:global(.vtex-menu-2-x-accordionIcon--itemprin){
+  display: none;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--srchlogcart)
+:global(.vtex-login-2-x-container)
+:global(.vtex-button__label){
+  padding-bottom: 0!important;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--product-image-container) {
+  width: 100%;
+}
+
+:global(.vtex-minicart-2-x-minicartIconContainer)
+  :global(.vtex-minicart-2-x-cartIcon) {
+  width: 0%;
+}
+
+:global(.vtex-minicart-2-x-minicartIconContainer)::before {
+  content: url(https://paulette.vtexassets.com/arquivos/Shopping_Bag.png);
+  max-width: 16px;
+}
+
+:global(.vtex-login-2-x-container)
+  :global(.vtex-button)
+  :global(.vtex-button__label)::before {
+  content: url(https://paulette.vtexassets.com/arquivos/account34x34.png);
+}
+
+:global(.vtex-login-2-x-container)
+  :global(.vtex-button)
+  :global(.vtex-button__label)
+  :global(.vtex-login-2-x-profileIcon) {
+  width: 0%;
+}
+
+:global(.vtex-login-2-x-profile) {
+  font-family: "Sofia-Pro";
+  line-height: 1.5;
+  color: #efb3cb;
+}
+
+:global(.vtex-login-2-x-container)
+  :global(.vtex-button)
+  :global(.vtex-button__label) {
+  padding-right: 0%;
+  padding-left: 0%;
+}
+
+/*---------------- login -----------------------*/
+:global(.vtex-login-2-x-arrowUp) {
+  z-index: -1;
+}
+
+:global(.vtex-login-2-x-contentContainer){
+  min-width: max-content!important;
+}
+
+:global(.vtex-login-2-x-contentContainer),
+:global(.vtex-login-2-x-backButton)
+  :global(.vtex-button)
+  :global(.vtex-button__label) {
+  background-color: #ffffff;
+  border-color: 1px solid #fff;
+}
+
+:global(.vtex-login-2-x-content) {
+  display: grid;
+}
+
+:global(.vtex-login-2-x-formTitle) {
+  font-size: 0;
+}
+
+:global(.vtex-login-2-x-formTitle)::before {
+  content: "Ingresa a tu cuenta Paulette";
+  font-size: 24px;
+  font-weight: 600;
+}
+
+:global(.vtex-login-2-x-accessCodeOptionBtn) :global(.vtex-button),
+:global(.vtex-login-2-x-emailPasswordOptionBtn) :global(.vtex-button),
+:global(.vtex-login-2-x-sendButton) :global(.vtex-button) {
+  background-color: #ffffff;
+  border: 1px solid #efb3cb !important;
+  border-radius: 0%;
+}
+
+:global(.vtex-login-2-x-accessCodeOptionBtn)
+  :global(.vtex-button)
+  :global(.vtex-button__label),
+:global(.vtex-login-2-x-emailPasswordOptionBtn)
+  :global(.vtex-button)
+  :global(.vtex-button__label),
+:global(.vtex-login-2-x-googleOptionBtn)
+  :global(.vtex-button)
+  :global(.vtex-button__label),
+:global(.vtex-login-2-x-facebookOptionBtn)
+  :global(.vtex-button)
+  :global(.vtex-button__label),
+:global(.vtex-login-2-x-sendButton)
+  :global(.vtex-button)
+  :global(.vtex-button__label),
+:global(.vtex-login-2-x-backButton)
+  :global(.vtex-button)
+  :global(.vtex-button__label) {
+  color: #000000;
+}
+
+:global(.vtex-login-2-x-googleOptionBtn) :global(.vtex-button),
+:global(.vtex-login-2-x-facebookOptionBtn) :global(.vtex-button) {
+  border: 1px solid #000000;
+  border-radius: 0%;
+}
+
+:global(.vtex-login-2-x-googleOptionBtn) :global(.vtex-button):hover,
+:global(.vtex-login-2-x-facebookOptionBtn) :global(.vtex-button):hover,
+:global(.vtex-login-2-x-accessCodeOptionBtn) :global(.vtex-button):hover,
+:global(.vtex-login-2-x-emailPasswordOptionBtn) :global(.vtex-button):hover,
+:global(.vtex-login-2-x-sendButton) :global(.vtex-button):hover {
+  background-color: #efb3cb;
+}
+
+:global(.vtex-login-2-x-accessCodeOptionBtn)
+  :global(.vtex-button)
+  :global(.vtex-button__label):hover,
+:global(.vtex-login-2-x-emailPasswordOptionBtn)
+  :global(.vtex-button)
+  :global(.vtex-button__label):hover,
+:global(.vtex-login-2-x-googleOptionBtn)
+  :global(.vtex-button)
+  :global(.vtex-button__label):hover,
+:global(.vtex-login-2-x-facebookOptionBtn)
+  :global(.vtex-button)
+  :global(.vtex-button__label):hover,
+:global(.vtex-login-2-x-sendButton)
+  :global(.vtex-button)
+  :global(.vtex-button__label):hover {
+  color: #ffffff;
+}
+
+:global(.vtex-login-2-x-forgotPasswordLink),
+:global(.vtex-login-2-x-dontHaveAccount) {
+  color: #efb3cb;
+}
+
+:global(.vtex-toast) {
+  background-color: #efb3cb;
+}
+
+:global(.vtex-store-drawer-0-x-openIconContainer--draw-search) {
+  padding-right: 0%;
+  padding-left: 0%;
+  padding-top: 19px;
+}
+
+:global(.vtex-store-drawer-0-x-menuIcon--draw-search) {
+  width: 0;
+}
+
+:global(.vtex-store-drawer-0-x-openIconContainer--draw-search)::before {
+  content: url(https://paulette.vtexassets.com/arquivos/search25x25.png);
+}
+
+@media (min-width: 750px) {
+  :global(.vtex-store-drawer-0-x-openIconContainer--draw-search)::before {
+    content: url(https://paulette.vtexassets.com/arquivos/Search.png);
+  }
+}
+
+:global(.vtex-rich-text-0-x-paragraph--titsrch) {
+  margin-bottom: 0;
+  padding-left: 16px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--contentsrch)
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth)
+  :global(.vtex-store-components-3-x-searchBarContainer) {
+  padding-top: 0%;
+}
+
+:global(.vtex-menu-2-x-styledLinkContent--itemprinlog)::before {
+  content: url(https://paulette.vtexassets.com/arquivos/account16x16.png);
+  position: relative;
+  right: 3px;
+  top: 1px;
+}
+
+:global(.vtex-menu-2-x-styledLinkContent--itemprinlog) {
+  font-weight: 500;
+}
+
+/* Serach container style starts */
+
+:global(.vtex-flex-layout-0-x-flexCol--intem-login) {
+  padding-top: 25px;
+}
+
+:global(.vtex-store-components-3-x-link--ic-sld1) {
+  color: #000000;
+  font-size: 14px;
+  text-decoration: none;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 3px;
+  transition: 0.3s ease all;
+}
+
+:global(.vtex-store-components-3-x-link--ic-sld1):hover{
+  font-weight: bold;
+}
+
+@media (max-width: 450px) {
+  :global(.vtex-slider-layout-0-x-slideChildrenContainer--sldprincipal)
+    :global(.vtex-store-components-3-x-paragraph) {
+    margin-bottom: 7px !important;
+  }
+}
+
+:global(.vtex-store-components-3-x-heading--inforpueba),
+:global(.vtex-store-components-3-x-heading--inforpuebaizq) {
+  font-size: 30px;
+  text-align: center;
+}
+:global(.vtex-store-components-3-x-heading--inforpueba),
+:global(.vtex-store-components-3-x-heading--inforpuebader) {
+  font-size: 30px;
+  text-align: center;
+}
+
+:global(.vtex-store-components-3-x-paragraph--inforpueba),
+:global(.vtex-store-components-3-x-paragraph--inforpuebaizq) {
+  text-align: center;
+  font-family: "Caslon-Italic";
+  font-size: 20px;
+  margin-bottom: 0%;
+}
+:global(.vtex-store-components-3-x-paragraph--inforpueba),
+:global(.vtex-store-components-3-x-paragraph--inforpuebader) {
+  text-align: center;
+  font-family: "Caslon-Italic";
+  font-size: 20px;
+  margin-bottom: 0%;
+}
+
+:global(.vtex-button){
+  transition: 0.3s ease all;
+}
+
+:global(.vtex-store-components-3-x-infoCardCallActionContainer--inforpueba)
+  :global(.vtex-button),
+:global(.vtex-store-components-3-x-infoCardCallActionContainer--inforpuebaizq)
+  :global(.vtex-button) {
+  border-radius: 0%;
+  border: thin;
+  border: 1px solid #000000;
+}
+:global(.vtex-store-components-3-x-infoCardCallActionContainer--inforpueba)
+  :global(.vtex-button),
+:global(.vtex-store-components-3-x-infoCardCallActionContainer--inforpuebader)
+  :global(.vtex-button) {
+  border-radius: 0%;
+  border: thin;
+  border: 1px solid #000000;
+}
+
+:global(.vtex-store-components-3-x-infoCardCallActionContainer--inforpueba)
+  :global(.vtex-button)
+  :global(.vtex-button__label),
+:global(.vtex-store-components-3-x-infoCardCallActionContainer--inforpuebaizq)
+  :global(.vtex-button)
+  :global(.vtex-button__label) {
+  color: #000000;
+  font-size: 15px;
+}
+:global(.vtex-store-components-3-x-infoCardCallActionContainer--inforpueba)
+  :global(.vtex-button)
+  :global(.vtex-button__label),
+:global(.vtex-store-components-3-x-infoCardCallActionContainer--inforpuebader)
+  :global(.vtex-button)
+  :global(.vtex-button__label) {
+  color: #000000;
+  font-size: 15px;
+}
+
+:global(.vtex-store-components-3-x-infoCardCallActionContainer--inforpueba)
+  :global(.vtex-button),
+:global(.vtex-store-components-3-x-infoCardCallActionContainer--inforpuebaizq)
+  :global(.vtex-button) {
+  width: 240px;
+  height: 39px;
+}
+:global(.vtex-store-components-3-x-infoCardCallActionContainer--inforpueba)
+  :global(.vtex-button),
+:global(.vtex-store-components-3-x-infoCardCallActionContainer--inforpuebader)
+  :global(.vtex-button) {
+  width: 240px;
+  height: 39px;
+}
+
+:global(.vtex-store-components-3-x-headingLevel1--ic-sld1) {
+  font-family: "Didot";
+  color: #000000;
+  letter-spacing: 3px;
+  margin: 20px 0;
+  font-size: 52px;
+}
+
+@media (max-width: 450px) {
+  :global(.vtex-store-components-3-x-headingLevel1--ic-sld1) {
+    font-size: 27px;
+  }
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--srchlogcart) {
+  width: auto;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--rowcontentsrch)
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+  width: auto !important;
+  margin-right: 15px;
+}
+
+:global(.vtex-login-2-x-buttonSocial)
+:global(.vtex-button__label):hover {
+  color: #000000!important;
+}
+
+:global(.vtex-minicart-2-x-minicartContainer)
+:global(.vtex-button){
+  margin-top: -3px;
+}
+
+@media(min-width: 1024px){
+  :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile){
+    padding: 0 40px;
+  }
+}
+
+@media (min-width:750px){
+  :global(.vtex-store-components-3-x-logoImage){
+    margin-left: 12px;
+  }
+}
+
+@media (min-width:900px) and (max-width: 1025px){
+  :global(.vtex-store-components-3-x-logoImage){
+    margin-left: 40px;
+  }
+}
+
+@media(min-width:450px){
+  :global(.vtex-store-components-3-x-searchBarContainer)
+  :global(.vtex-input)::before{
+    content: url(https://paulette.vtexassets.com/arquivos/Search.png);
+    position: absolute;
+    right: 0;
+    top: 6px;
+  }
+  :global(.vtex-store-components-3-x-searchBarContainer)
+  :global(.vtex-input):hover::before{
+    cursor: pointer;
+  }
+  :global(.vtex-store-components-3-x-searchBarContainer)
+  :global(.vtex-input__suffix){
+    display: none;
+  }
+}
+:global(.vtex-minicart-2-x-minicartQuantityBadge){
+  font-size: 12px!important;
+  padding-bottom: 4px;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--link-wishlist){
+  margin-top: 3px!important;
+}
+:global(.vtex-store-components-3-x-searchBarContainer)
+:global(.vtex-input)
+:global(.vtex-input-prefix__group)
+:global(.vtex-styleguide-9-x-input):focus{
+  border-bottom: 2px solid #efb3cb;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--link-wishlist)
+:global(.vtex-store-components-3-x-imageElement){
+  height: 34px;
+}

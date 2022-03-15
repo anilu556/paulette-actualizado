@@ -1,0 +1,154 @@
+{
+  "store.storelocator": {
+    "blocks": [
+      "responsive-layout.desktop#str-loc",
+      "responsive-layout.tablet#str-loc",
+      "responsive-layout.phone#str-loc"
+      ]
+  },
+
+  "responsive-layout.desktop#str-loc":{
+    "children":[
+      "rich-text#title-storeloc",
+      "storeMap",
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#titinstagram-tablet",
+      "slider-layout#text-test",
+      "flex-layout.row#newsletter",
+      "back-to-top-button"
+    ]
+  },
+  "responsive-layout.tablet#str-loc":{
+    "children":[
+      "flex-layout.row#title",
+      "storeMap",
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#titinstagram-tablet",
+      "slider-layout#text-test",
+      "flex-layout.row#newsletter",
+      "back-to-top-button"
+    ]
+  },
+  "responsive-layout.phone#str-loc":{
+    "children":[
+      "flex-layout.row#title",
+      "storeMap",
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#titinstagram-tablet",
+      "slider-layout#text-test",
+      "flex-layout.row#newsletter-mobile",
+      "back-to-top-button"
+    ]
+  },
+  "rich-text#title-storeloc": {
+    "props": {
+      "text": "## Store Locator"
+    }
+  },
+  "flex-layout.row#container": {
+    // "children": ["store-list"]
+    "children":["storeMap"]
+  },
+  "store.storedetail": {
+    "blocks": ["flex-layout.row#titleStore", "store-group"]
+  },
+  "store-group": {
+    "children": [
+      "responsive-layout.desktop#sg",
+      "responsive-layout.tablet#sg",
+      "responsive-layout.phone#sg"
+    ],
+    "props": {
+      "title": "{storeName} Store"
+    }
+  },
+  "responsive-layout.desktop#sg":{
+    "children":[
+      "flex-layout.row#containerStore",
+      "flex-layout.row#titinstagram-tablet",
+      "slider-layout#text-test",
+      "flex-layout.row#newsletter",
+      "back-to-top-button"
+    ]
+  },
+  "responsive-layout.tablet#sg":{
+    "children":[
+      "flex-layout.row#containerStore",
+      "flex-layout.row#titinstagram-tablet",
+      "slider-layout#text-test",
+      "flex-layout.row#newsletter",
+      "back-to-top-button"
+    ]
+  },
+  "responsive-layout.phone#sg":{
+    "children":[
+      "flex-layout.row#containerStore",
+      "flex-layout.row#titinstagram-tablet",
+      "slider-layout#text-test",
+      "flex-layout.row#newsletter-mobile",
+      "back-to-top-button"
+    ]
+  },
+  "flex-layout.row#titleStore": {
+    "children": ["flex-layout.col#titleStore"]
+  },
+  "flex-layout.row#containerStore": {
+    "children": ["flex-layout.col#detail", "flex-layout.col#store"]
+  },
+  "flex-layout.col#titleStore": {
+    "children": ["rich-text#titleStore"],
+    "props": {
+      "blockClass": "title",
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#titleStore": {
+    "props": {
+      "text": "## Store Detail"
+    }
+  },
+  "flex-layout.col#detail": {
+    "children": [
+      "store-back-link",
+      "store-name",
+      "store-address",
+      "store-hours",
+      "store-instructions"
+    ],
+    "props": {
+      "width": "20%",
+      "preventVerticalStretch": true,
+      "blockClass": "detail-cont"
+    }
+  },
+  "flex-layout.col#store": {
+    "children": [
+      "store-map"],
+    "props": {
+      "width": "80%",
+      "blockClass": "mapaCont"
+    }
+  },
+  "store-map":{
+    "props":{
+      "blockClass": "mapa",
+      "height": "100%"
+    }
+  },
+  "store-hours": {
+    "props": {
+      "label": "Horario:",
+      "format": "12h"
+    }
+  },
+  "store-back-link": {
+    "props": {
+      "label": "Regresar"
+    }
+  },
+  "store-instructions": {
+    "props": {
+      "label": ""
+    }
+  }
+}

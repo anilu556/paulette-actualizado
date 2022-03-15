@@ -1,0 +1,258 @@
+{
+  "vtex.menu@2.x:menu#categmen":{
+    "props": {
+        "experimentalOptimizeRendering": true
+      },
+    "children":[
+        "menu-item#coleccion-temporada",
+        "menu-item#pasteles-signature",
+        "menu-item#gelatinas",
+        "menu-item#libre",
+        "menu-item#individuales",
+        "menu-item#macarons",
+        // "menu-item#chocolates",
+        "vtex.menu@2.x:menu#chocolates",
+        "vtex.menu@2.x:menu#mas"
+    ]
+  },
+  "menu-item#boutiquesMobile":{
+    "props":{
+        "type": "custom",
+        "href": "/boutiques",
+        "text": "BOUTIQUES",
+        "blockClass":"itemprin"
+    }
+  },
+  "menu-item#coleccion-temporada":{
+    "props":{
+        "type": "custom",
+        "href": "/coleccion-de-temporada?initialMap=c&initialQuery=pasteles-signature&map=category-1",
+        "text": "COLECCIÓN DE TEMPORADA",
+        "blockClass":"itemprin"
+    }
+  },
+  "menu-item#pasteles-signature":{
+    "props":{
+        "type": "custom",
+        "href": "/pasteles-signature",
+        "text": "PASTELES SIGNATURE",
+        "blockClass":"itemprin"
+    }
+  },
+  "menu-item#gelatinas":{
+    "props":{
+        "type": "custom",
+        "href": "/gelatinas",
+        "text": "GELATINAS",
+        "blockClass":"itemprin"
+    }
+  },
+  "menu-item#libre":{
+    "props":{
+        "type": "custom",
+        "href": "/reposteria-libre-de-azucar?initialMap=c&initialQuery=pasteles-signature&map=category-1",
+        "text": "LIBRE DE AZÚCAR",
+        "blockClass":"itemprin"
+    }
+  },
+  "menu-item#individuales":{
+    "props":{
+        "type": "custom",
+        "href": "/pasteles-individuales",
+        "text": "PASTELES INDIVIDUALES",
+        "blockClass":"itemprin"
+    }
+  },
+  "menu-item#macarons":{
+    "props":{
+        "type": "custom",
+        "href": "/macarons-paulette?initialMap=c&initialQuery=pasteles-signature&map=category-1",
+        "text": "MACARONS",
+        "blockClass":"itemprin"
+    }
+  },
+  "menu-item#fresas-belgas":{
+    "props":{
+        "type": "custom",
+        "href": "/fresas-belga",
+        "text": "FRESAS BELGAS",
+        "blockClass":"itemprin"
+    }
+  },
+  "menu-item#chocolates":{
+    "props":{
+        "type": "custom",
+        "href": "/chocolates-de-autor",
+        "text": "CHOCOLATES",
+        "blockClass":"itemprin"
+    }
+  },
+  "menu-item#brownie-town":{
+    "props":{
+        "type": "custom",
+        "href": "/brownie-town",
+        "text": "BROWNIE TOWN",
+        "blockClass":"itemprin"
+    }
+  },
+  "menu-item#galletas":{
+    "props":{
+      "type": "custom",
+      "href": "/galletas",
+      "text": "GALLETAS",
+      "blockClass":"itemprin"
+    }
+  },
+  "menu-item#panques":{
+    "props":{
+      "type": "custom",
+      "href": "/panques",
+      "text": "PANQUES",
+      "blockClass":"itemprin"
+    }
+  },
+  "menu-item#alacena-paulette":{
+    "props":{
+      "type": "custom",
+      "href": "/alacena-paulette?initialMap=c&initialQuery=pasteles-signature&map=category-1",
+      "text": "ALACENA PAULETTE",
+      "blockClass":"itemprin"
+    }
+  },
+  "menu-item#accesorios":{
+    "props":{
+      "type": "custom",
+      "href": "/accesorios",
+      "text": "ACCESORIOS",
+      "blockClass":"itemprin"
+    }
+  },
+
+
+
+
+
+  "vtex.menu@2.x:menu#chocolates": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "itemprin"
+    },
+    "children": ["menu-item#chocolates-mobile"]
+  },
+  "menu-item#chocolates-mobile": {
+    "props": {
+      "blockClass":"itemprin",
+      "id": "menu-item-category-chocolates",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "CHOCOLATES",
+        "text": "CHOCOLATES"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#chocolates"]
+  },
+  "vtex.menu@2.x:submenu#chocolates": {
+    "children": ["vtex.menu@2.x:menu#chocolates-accordion"],
+    "props":{"blockClass": "sub-menu-choc-desk"}
+  },
+
+  "vtex.menu@2.x:menu#chocolates-accordion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#chocolates-autor",
+      "menu-item#chocolates-taza"
+    ]
+  },
+  "menu-item#chocolates-autor":{
+    "props":{
+      "type": "custom",
+      "href": "/chocolates-de-autor",
+      "text": "CHOCOLATES DE AUTOR",
+      "blockClass":"itemprin"
+    }
+  },
+  "menu-item#chocolates-taza":{
+    "props":{
+      "type": "custom",
+      "href": "/chocolates-para-disfrutar-en-taza",
+      "text": "CHOCOLATES PARA DISFRUTAR EN TAZA",
+      "blockClass":"itemprin"
+    }
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "vtex.menu@2.x:menu#mas": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "itemprin"
+    },
+    "children": ["menu-item#mas-mobile"]
+  },
+  "menu-item#mas-mobile": {
+    "props": {
+      "blockClass":"itemprin",
+      "id": "menu-item-category-mas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "MÁS DROPDOWN",
+        "text": "MÁS"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#mas"]
+  },
+  "vtex.menu@2.x:submenu#mas": {
+    "children": ["vtex.menu@2.x:menu#mas-accordion"],
+    "props":{"blockClass": "sub-menu-mas-desk"}
+  },
+
+  "vtex.menu@2.x:menu#mas-accordion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#fresas-belgas",
+      "menu-item#brownie-town",
+      "menu-item#galletas",
+      "menu-item#panques",
+      // "menu-item#alacena-paulette",
+      "menu-item#accesorios"
+    ]
+  },
+
+
+
+  "menu-item#login":{
+    "props":{
+        "type": "custom",
+        "href": "/account",
+        "text": "MI CUENTA PAULETTE",
+        "blockClass":"itemprinlog"
+    }
+  }
+
+
+
+
+
+}
