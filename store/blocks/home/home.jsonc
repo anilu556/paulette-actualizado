@@ -38,10 +38,10 @@
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "__fold__.experimentalLazyAssets",
       "flex-layout.row#titrosa-tablet",
-      "flex-layout.row#shelf1",
+      "flex-layout.row#shelftablet1",
       "flex-layout.row#prueba",
       "flex-layout.row#titmenta-tablet",
-      "flex-layout.row#shelf2",
+      "flex-layout.row#shelftablet2",
       "flex-layout.row#titinstagram-tablet",
       "slider-layout#text-test",
       "flex-layout.row#newsletter",
@@ -56,10 +56,10 @@
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "__fold__.experimentalLazyAssets",
       "flex-layout.row#titrosa",
-      "flex-layout.row#shelf1",
+      "flex-layout.row#shelfphone1", 
       "flex-layout.row#prueba",
       "flex-layout.row#titmenta",
-      "flex-layout.row#shelf2",
+      "flex-layout.row#shelfphone2",
       "flex-layout.row#infotxtizqm",
       "flex-layout.row#titinstagram",
       "slider-layout#text-test",
@@ -83,11 +83,25 @@
   },
 
    /*################## Shelf 1 #########################*/
+
+   "flex-layout.row#shelftablet1": {
+    "children": ["list-context.product-list#demotablet1"]
+  },
+  "flex-layout.row#shelftablet2": {
+    "children": ["list-context.product-list#demotablet2"]
+  },
+  "flex-layout.row#shelfphone1": {
+    "children": ["list-context.product-list#demophone1"]
+  },   "flex-layout.row#shelfphone2": {
+    "children": ["list-context.product-list#demophone2"]
+  },
+
   "flex-layout.row#shelf1": {
     "children": ["list-context.product-list#demo1"]
   },
 
   "list-context.product-list#demo1": {
+    "title": "carruselHome1",
     "blocks": ["product-summary.shelf"],
     "children": ["slider-layout#demo-products"],
     "props": {
@@ -116,6 +130,7 @@
   },
 
   "list-context.product-list#demo2": {
+    "title": "carruselHome2",
     "blocks": ["product-summary.shelf"],
     "children": ["slider-layout#demo-products2"],
     "props": {
@@ -701,12 +716,108 @@
         "src":"arquivos/P_IG_W_4.png",
         "blockClass": "banner-insta"
       }
-    }
+    },
    // carrusel instagram banenrs ends
 
 
 
    /*################## Bandera Rosa #########################*/
+
+   "list-context.product-list#demotablet1": {
+    "title": "carruselTablet1",
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-productstablet1"],
+    "props": {
+    }
+  },
+  "slider-layout#demo-productstablet1": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf",
+      "autoplay":{
+        "timeout":5000,
+        "stopOnHover":true
+      }
+    }
+  },
+  "list-context.product-list#demotablet2": {
+    "title": "carruselTablet2",
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-productstablet2"],
+    "props": {
+    }
+  },
+  "slider-layout#demo-productstablet2": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf",
+      "autoplay":{
+        "timeout":5000,
+        "stopOnHover":true
+      }
+    }
+  },
+
+  "list-context.product-list#demophone1": {
+    "title": "carruselphone1",
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-phone1"],
+    "props": {
+    }
+  },
+  "slider-layout#demo-phone1": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf",
+      "autoplay":{
+        "timeout":5000,
+        "stopOnHover":true
+      }
+    }
+  },
+  "list-context.product-list#demophone2": {
+    "title": "carruselphone2",
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-phone2"],
+    "props": {
+    }
+  },
+  "slider-layout#demo-phone2": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf",
+      "autoplay":{
+        "timeout":5000,
+        "stopOnHover":true
+      }
+    }
+  }
+
+
 
 
 
