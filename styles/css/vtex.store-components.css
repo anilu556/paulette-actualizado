@@ -1535,3 +1535,12 @@
   text-align: center;
 }
 
+/* Minicart text */
+:global(.vtex-product-list-0-x-availabilityMessageText)::after {
+  content: "¡Oh lo sentimos! Este postre no está disponible por el momento, te recomendamos ir al menú y encontrar otros antojos golosos.";
+  font-size: 14px;
+}
+
+:global(.vtex-product-list-0-x-availabilityMessageText){
+  font-size: 0;
+}
