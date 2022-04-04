@@ -557,7 +557,7 @@
   background: #ffffff;
   color: #000000;
   width: 100%;
-  border: 2px solid#000000;
+  border: 2px solid #000000;
 }
 
 :global(.vtex-profile-form-3-x-toggleBusinessButtonWrapper)
@@ -1460,7 +1460,7 @@
 }
 :global(.vtex-search-2-x-itemList--top-search)
 :global(.vtex-search-2-x-itemListTitle)::before{
-  content: "Lo más buscado";
+  content: "¡Descubre los postres más deseados! Desde Creaciones Signature y de temporada hasta Pequeñas Dulzuras, Xocolats y otros antojos golosos.";
   font-size: 14px;
 }
 
