@@ -107,8 +107,8 @@
     "props":{
       "type": "custom",
       "href": "/panques",
-      "text": "PANQUES",
-      "blockClass":"itemprin"
+      "text": "PANQUÉS",
+      "blockClass":["itemprin", "itemprinPanques"]
     }
   },
   "menu-item#alacena-paulette":{

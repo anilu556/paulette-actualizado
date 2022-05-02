@@ -1544,3 +1544,13 @@
 :global(.vtex-product-list-0-x-availabilityMessageText){
   font-size: 0;
 }
+
+/* INICIO - Item "PANQUES" solo acento en "PANQUÉS" */
+:global(.vtex-menu-2-x-styledLinkContent--itemprinPanques) {
+  font-size: 0 !important;
+}
+:global(.vtex-menu-2-x-styledLinkContent--itemprinPanques)::before {
+  font-size: 14px;
+  content: "PANQUÉS";
+}
+/* INICIO - Item "PANQUES" solo acento en "PANQUÉS" */
