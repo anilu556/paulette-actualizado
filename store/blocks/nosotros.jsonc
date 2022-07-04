@@ -22,7 +22,8 @@
       // "flex-layout.row#infotxtder-nosotros",
       // "flex-layout.row#infotxtizq-nosotros2",
       "flex-layout.row#titinstagram-tablet",
-      "slider-layout#text-test",
+      "sandbox#ig",
+      //"slider-layout#text-test",
       "flex-layout.row#newsletter",
       "back-to-top-button"
     ]
@@ -41,7 +42,8 @@
       // "flex-layout.row#infotxtder-nosotros-tablet",
       // "flex-layout.row#infotxtizq-nosotros2-tablet",
       "flex-layout.row#titinstagram-tablet",
-      "slider-layout#text-test",
+      "sandbox#ig",
+      //"slider-layout#text-test",
       "flex-layout.row#newsletter"
     ]
   },
@@ -59,7 +61,8 @@
       // "flex-layout.row#infotxtder-nosotros",
       // "flex-layout.row#infotxtizq-nosotros2",
       "flex-layout.row#titinstagram-tablet",
-      "slider-layout#text-test",
+      "sandbox#ig",
+      //"slider-layout#text-test",
       "flex-layout.row#newsletter-mobile"
     ]
   },

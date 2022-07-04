@@ -13,7 +13,8 @@
       "storeMap",
       "__fold__.experimentalLazyAssets",
       "flex-layout.row#titinstagram-tablet",
-      "slider-layout#text-test",
+      "sandbox#ig",
+      //"slider-layout#text-test",
       "flex-layout.row#newsletter",
       "back-to-top-button"
     ]
@@ -24,7 +25,8 @@
       "storeMap",
       "__fold__.experimentalLazyAssets",
       "flex-layout.row#titinstagram-tablet",
-      "slider-layout#text-test",
+      "sandbox#ig",
+      //"slider-layout#text-test",
       "flex-layout.row#newsletter",
       "back-to-top-button"
     ]
@@ -35,7 +37,8 @@
       "storeMap",
       "__fold__.experimentalLazyAssets",
       "flex-layout.row#titinstagram-tablet",
-      "slider-layout#text-test",
+      "sandbox#ig",
+      //"slider-layout#text-test",
       "flex-layout.row#newsletter-mobile",
       "back-to-top-button"
     ]

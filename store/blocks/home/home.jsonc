@@ -22,12 +22,25 @@
       "flex-layout.row#shelf2",
       "flex-layout.row#infotxtizq",
       "flex-layout.row#titinstagram",
-      "slider-layout#text-test",
-      "flex-layout.row#newsletter",
+      "sandbox#ig",
+      //"slider-layout#text-test",
+      "flex-layout.row#newsletter",      
       "back-to-top-button"
 
 
     ]
+  },
+  "flex-layout.row#igspace":{
+    "children":[
+      
+    ]
+  },
+  "sandbox#ig":{
+    "props":{
+      "width":"100%",
+      "height": "auto",
+      "initialContent": "<div loading='lazy' data-mc-src='84a6f70e-b362-4eca-aa13-02d54afbb56b#null'></div><script src='https://cdn2.woxo.tech/a.js#62c34cc199927f9d5667d1a1' async data-usrc> </script>"
+    }
   },
 
  "responsive-layout.tablet":{
@@ -43,7 +56,8 @@
       "flex-layout.row#titmenta-tablet",
       "flex-layout.row#shelftablet2",
       "flex-layout.row#titinstagram-tablet",
-      "slider-layout#text-test",
+      "sandbox#ig",
+      //"slider-layout#text-test",
       "flex-layout.row#newsletter",
       "back-to-top-button"
     ]
@@ -62,7 +76,8 @@
       "flex-layout.row#shelfphone2",
       "flex-layout.row#infotxtizqm",
       "flex-layout.row#titinstagram",
-      "slider-layout#text-test",
+      "sandbox#ig",
+      //"slider-layout#text-test",
       "flex-layout.row#newsletter-mobile",
       "back-to-top-button"
 
@@ -815,6 +830,8 @@
         "stopOnHover":true
       }
     }
+
+    
   }
 
 

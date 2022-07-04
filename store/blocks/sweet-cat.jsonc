@@ -16,7 +16,8 @@
       "flex-layout.row#desc-sweet",
       "flex-layout.row#form-cotizar-catering",
       "flex-layout.row#titinstagram-tablet",
-      "slider-layout#text-test",
+      "sandbox#ig",
+      //"slider-layout#text-test",
       "flex-layout.row#newsletter",
       "back-to-top-button"
     ]
@@ -30,7 +31,8 @@
       "flex-layout.row#form-cotizar-catering",
       "__fold__.experimentalLazyAssets",
       "flex-layout.row#titinstagram-tablet",
-      "slider-layout#text-test",
+      "sandbox#ig",
+      //"slider-layout#text-test",
       "flex-layout.row#newsletter"
     ]
   },
@@ -43,7 +45,8 @@
       "flex-layout.row#form-cotizar-catering",
       "__fold__.experimentalLazyAssets",
       "flex-layout.row#titinstagram-tablet",
-      "slider-layout#text-test",
+      "sandbox#ig",
+      //"slider-layout#text-test",
       "flex-layout.row#newsletter-mobile"
     ]
   },

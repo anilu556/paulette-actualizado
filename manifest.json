@@ -66,7 +66,8 @@
     "vtex.store-newsletter": "1.x",
     "vtex.search": "2.x",
     "paulette.facturacion": "0.x",
-    "paulette.storemap": "0.x"
+    "paulette.storemap": "0.x",
+    "vtex.sandbox": "0.x"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "2.x",
