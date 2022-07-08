@@ -1,7 +1,7 @@
 {
   "vendor": "paulette",
   "name": "store-theme",
-  "version": "4.11.25",
+  "version": "4.11.26",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
