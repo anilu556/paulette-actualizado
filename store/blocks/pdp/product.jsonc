@@ -140,7 +140,9 @@
       "showNavigationArrows":false,
       "thumbnailsOrientation": "horizontal",
       "thumbnailMaxHeight": "50px",
-      "centerMode": "center,"
+      "centerMode": "center,",
+      "hiddenImages": ["grande"] 
+
     }
   },
   "product-specification-badges": {
