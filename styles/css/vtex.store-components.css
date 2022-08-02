@@ -1554,3 +1554,12 @@
   content: "PANQUÉS";
 }
 /* INICIO - Item "PANQUES" solo acento en "PANQUÉS" */
+
+:global(.vtex-rich-text-0-x-link--titulorosa){
+  color: #ffffff;
+  text-decoration: none;
+}
+
+:global(.vtex-rich-text-0-x-link--titulorosa):hover{
+  color: #ffffff;
+}
