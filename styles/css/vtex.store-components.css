@@ -1563,3 +1563,24 @@
 :global(.vtex-rich-text-0-x-link--titulorosa):hover{
   color: #ffffff;
 }
+
+:global(.vtex-order-placed-2-x-noticesList)
+:global(.vtex-order-placed-2-x-noticeListItem):first-child{
+  display: none;
+}
+
+@media (max-width: 885px) {
+  :global(.vtex-flex-layout-0-x-flexRow--pagoTienda){
+    padding: 0 calc(3% + -5px);;
+  }
+}
+
+:global(.vtex-store-components-3-x-notificationContent--notif-bar){
+  text-align: center;
+}
+
+@media (max-width: 375px) {
+  :global(.vtex-store-components-3-x-notificationBarContainer--notif-bar){
+    padding: 7% 0;
+  }
+}
