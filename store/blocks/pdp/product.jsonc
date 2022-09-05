@@ -141,7 +141,7 @@
       "thumbnailsOrientation": "horizontal",
       "thumbnailMaxHeight": "50px",
       "centerMode": "center,",
-      "hiddenImages": ["grande"] 
+      "hiddenImages": ["grande","individual"] 
 
     }
   },
