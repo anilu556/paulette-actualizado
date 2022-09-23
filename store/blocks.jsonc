@@ -13,10 +13,15 @@
   },
 
   "store.account": {
-    "blocks": ["my-account"],
+    "blocks": [
+      "my-account"
+  ],
     "parent": {
       "challenge": "challenge.profile"
-    }
+    },
+    "children":[
+      "cancelCancelButton"
+    ]
   },
 
   "store.login": {
