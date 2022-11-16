@@ -1584,3 +1584,31 @@
     padding: 7% 0;
   }
 }
+
+/* boton pdp mobile */
+@media (max-width: 640px) {
+  :global(.vtex-flex-layout-0-x-flexRowContent--product-summary-container)
+  :global(.vtex-flex-layout-0-x-flexRow--btn-container-pdp)
+  :global(.vtex-flex-layout-0-x-flexRowContent)
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+    width: 80%!important;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  :global(.vtex-flex-layout-0-x-flexRowContent--product-summary-container)
+  :global(.vtex-flex-layout-0-x-flexRow--btn-container-pdp)
+  :global(.vtex-flex-layout-0-x-flexRowContent)
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth)
+  :global(.vtex-button){
+    background-color: transparent ;
+    border: #000 solid 2px;
+  }
+  :global(.vtex-flex-layout-0-x-flexRowContent--product-summary-container)
+  :global(.vtex-flex-layout-0-x-flexRow--btn-container-pdp)
+  :global(.vtex-flex-layout-0-x-flexRowContent)
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth)
+  :global(.vtex-button)
+  :global(.vtex-button__label){
+    color: black;
+  }
+}

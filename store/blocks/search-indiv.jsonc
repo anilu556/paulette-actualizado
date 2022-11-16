@@ -73,6 +73,7 @@
     "props": {
       "layouts": [
         {
+          "preferredSKU":"PRICE_ASC",
           "name": "grid",
           "component": "GridSummary",
           "itemsPerRow": {
